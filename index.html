@@ -1589,7 +1589,7 @@ window.B13_SITE_URL = 'https://bingob13-rgb.github.io/b13/';
       <p id="offBanner" class="hidden text-center text-red-500 font-extrabold text-lg py-1">አፑ ለጊዜው ዝግ ነው!</p>
       <p class="auth-sub">ለመግባት መረጃዎን ያስገቡ</p>
       <label class="auth-lbl">ስልክ ቁጥር</label>
-      <input id="lPhone" class="inp" type="tel" inputmode="numeric" maxlength="10" placeholder="09xxxxxxxx">
+      <div class="flex gap-2 items-center"><span class="text-sm font-bold shrink-0" style="color:#64748b">+251</span><input id="lPhone" class="inp flex-1" type="tel" inputmode="numeric" maxlength="9" placeholder="9xxxxxxxx"></div>
       <label class="auth-lbl">የይለፍ ቃል</label>
       <div class="relative"><input id="lPass" class="inp pr-12" type="password"><button type="button" onclick="eye('lPass',this)" class="absolute right-4 top-5 text-lg">👁</button></div>
       <div id="lErr" class="hidden text-red-500 text-xs text-center bg-red-500/10 rounded-lg py-2"></div>
@@ -1606,7 +1606,7 @@ window.B13_SITE_URL = 'https://bingob13-rgb.github.io/b13/';
     <div id="pSign" class="hidden fade space-y-3 max-w-md mx-auto">
       <button onclick="authPanel('l')" class="text-sm font-bold" style="color:#1d5bdc">← ተመለስ</button>
       <h2 class="auth-h">መለያ ክፈት</h2>
-      <input id="sPhone" class="inp" type="tel" inputmode="numeric" maxlength="10" placeholder="ስልክ (09xxxxxxxx)">
+      <div class="flex gap-2 items-center"><span class="text-sm font-bold shrink-0" style="color:#64748b">+251</span><input id="sPhone" class="inp flex-1" type="tel" inputmode="numeric" maxlength="9" placeholder="9xxxxxxxx"></div>
       <input id="sName" class="inp" placeholder="ሙሉ ስም">
       <div class="relative"><input id="sPass" class="inp pr-12" type="password" placeholder="የይለፍ ቃል (ቢያንስ 4)"><button type="button" onclick="eye('sPass',this)" class="absolute right-3 top-3 text-lg">👁</button></div>
       <div class="relative"><input id="sPass2" class="inp pr-12" type="password" placeholder="የይለፍ ቃል ድገም"><button type="button" onclick="eye('sPass2',this)" class="absolute right-3 top-3 text-lg">👁</button></div>
@@ -1618,7 +1618,7 @@ window.B13_SITE_URL = 'https://bingob13-rgb.github.io/b13/';
       <button onclick="authPanel('l')" class="text-indigo-300 text-sm">← ወደ መግቢያ ተመለስ</button>
       <h2 class="text-2xl font-extrabold">የይለፍ ቃል ረስተዋል?</h2>
       <p class="text-slate-400 text-sm">ስልክዎን እና አዲስ የይለፍ ቃል ያስገቡ</p>
-      <input id="fPhone" class="inp" type="tel" inputmode="numeric" maxlength="10" placeholder="ስልክ (09xxxxxxxx)">
+      <div class="flex gap-2 items-center"><span class="text-sm font-bold shrink-0" style="color:#64748b">+251</span><input id="fPhone" class="inp flex-1" type="tel" inputmode="numeric" maxlength="9" placeholder="9xxxxxxxx"></div>
       <div class="relative"><input id="fPass" class="inp pr-12" type="password" placeholder="አዲስ የይለፍ ቃል"><button type="button" onclick="eye('fPass',this)" class="absolute right-3 top-3 text-lg">👁</button></div>
       <div class="relative"><input id="fPass2" class="inp pr-12" type="password" placeholder="አዲሱን የይለፍ ቃል ድገም"><button type="button" onclick="eye('fPass2',this)" class="absolute right-3 top-3 text-lg">👁</button></div>
       <div id="fErr" class="hidden text-red-400 text-xs text-center bg-red-500/10 rounded-lg py-2"></div>
@@ -1818,7 +1818,7 @@ window.B13_SITE_URL = 'https://bingob13-rgb.github.io/b13/';
       <div id="wTr" class="card p-4 space-y-3 hidden">
         <h3 class="font-extrabold" data-i="w_tr">⇄ ብር ላክ (ወደ ሌላ ተጠቃሚ)</h3>
         <p class="text-[12px] text-slate-400" data-i="w_tr_note">የተቀባዩን ስልክ ቁጥር ያስገቡ። ብሩ ወዲያውኑ ይላካል።</p>
-        <input id="trPhone" class="inp" type="tel" inputmode="numeric" maxlength="10" placeholder="የተቀባይ ስልክ (09xxxxxxxx)" data-ip="ph_tr_phone">
+        <div class="flex gap-2 items-center"><span class="text-sm font-bold shrink-0" style="color:#64748b">+251</span><input id="trPhone" class="inp flex-1" type="tel" inputmode="numeric" maxlength="9" placeholder="9xxxxxxxx" data-ip="ph_tr_phone"></div>
         <input id="trAmt" type="number" min="10" class="inp" placeholder="መጠን (ቢያንስ 10 ብር)" data-ip="ph_amt10">
         <button class="btn b-p" id="btnTransfer" data-i="w_tr_btn">ብር ላክ</button>
       </div>
@@ -2009,7 +2009,7 @@ window.B13_SITE_URL = 'https://bingob13-rgb.github.io/b13/';
           <h3 class="font-bold text-sm text-indigo-300">➕ አዲስ አድሚን ፍጠር</h3>
           <select id="aRole" class="inp"><option value="ADMIN_GAME">🎮 ጨዋታ አድሚን</option><option value="ADMIN_FINANCE">💰 ሒሳብ አድሚን</option></select>
           <input id="aName" class="inp" placeholder="ሙሉ ስም">
-          <input id="aPhone" class="inp" type="tel" inputmode="numeric" maxlength="10" placeholder="ስልክ (09xxxxxxxx)">
+          <div class="flex gap-2 items-center"><span class="text-sm font-bold shrink-0" style="color:#64748b">+251</span><input id="aPhone" class="inp flex-1" type="tel" inputmode="numeric" maxlength="9" placeholder="9xxxxxxxx"></div>
           <div class="relative"><input id="aPass" class="inp pr-12" type="password" placeholder="የይለፍ ቃል (ቢያንስ 4)"><button type="button" onclick="eye('aPass',this)" class="absolute right-3 top-3 text-lg">👁</button></div>
           <div id="aErr" class="hidden text-red-400 text-xs text-center"></div>
           <button class="btn b-p" id="btnAddAdmin">አድሚን ፍጠር</button>
@@ -2161,7 +2161,7 @@ window.B13_SITE_URL = 'https://bingob13-rgb.github.io/b13/';
     <h3 class="font-extrabold text-lg">👑 የባለቤት (Owner) መለያ ይፍጠሩ</h3>
     <p class="text-xs text-slate-400">የመጀመሪያ ጊዜ ማዋቀር። ይህ መለያ ሁሉንም ይቆጣጠራል።</p>
     <input id="oName" class="inp" placeholder="ሙሉ ስም">
-    <input id="oPhone" class="inp" type="tel" inputmode="numeric" maxlength="10" placeholder="ስልክ (09xxxxxxxx)">
+    <div class="flex gap-2 items-center"><span class="text-sm font-bold shrink-0" style="color:#64748b">+251</span><input id="oPhone" class="inp flex-1" type="tel" inputmode="numeric" maxlength="9" placeholder="9xxxxxxxx"></div>
     <div class="relative"><input id="oPass" class="inp pr-12" type="password" placeholder="የይለፍ ቃል (ቢያንስ 4)"><button type="button" onclick="eye('oPass',this)" class="absolute right-3 top-3 text-lg">👁</button></div>
     <div class="relative"><input id="oPass2" class="inp pr-12" type="password" placeholder="የይለፍ ቃል ድገም"><button type="button" onclick="eye('oPass2',this)" class="absolute right-3 top-3 text-lg">👁</button></div>
     <div id="oErr" class="hidden text-red-400 text-xs text-center"></div>
@@ -2258,7 +2258,7 @@ const I18N = {
 "ተመለስ":["Back","Deebi'i","ተመለስ"],
 "መለያ ፍጠር":["Create account","Herrega uumi","ኣካውንት ፍጠር"],
 "የይለፍ ቃል":["Password","Jecha iggitaa","መሕለፊ ቃል"],
-"ስልክ (09xxxxxxxx)":["Phone (09xxxxxxxx)","Bilbila (09xxxxxxxx)","ተሌፎን (09xxxxxxxx)"],
+"ስልክ (9xxxxxxxx)":["Phone (9xxxxxxxx)","Bilbila (9xxxxxxxx)","ተሌፎን (9xxxxxxxx)"],
 "ሙሉ ስም":["Full name","Maqaa guutuu","ምሉእ ስም"],
 "የይለፍ ቃል (ቢያንስ 4)":["Password (min. 4)","Jecha iggitaa (xiqqaatti 4)","መሕለፊ ቃል (ብውሑዱ 4)"],
 "የይለፍ ቃል ድገም":["Repeat password","Jecha iggitaa irra deebi'i","መሕለፊ ቃል ደጊምካ ጽሓፍ"],
@@ -2266,7 +2266,7 @@ const I18N = {
 "መጠን (ብር)":["Amount (Birr)","Hamma (Birrii)","መጠን (ብር)"],
 "Txn / Ref ቁጥር":["Txn / Ref number","Lakkoofsa Txn / Ref","Txn / Ref ቁጽሪ"],
 "መጠን (ቢያንስ 100 ብር)":["Amount (min. 100 Birr)","Hamma (xiqqaatti Birrii 100)","መጠን (ብውሑዱ 100 ብር)"],
-"የተቀባይ ስልክ (09xxxxxxxx)":["Receiver phone (09xxxxxxxx)","Bilbila fudhataa (09xxxxxxxx)","ተሌፎን ተቐባሊ (09xxxxxxxx)"],
+"የተቀባይ ስልክ (9xxxxxxxx)":["Receiver phone (9xxxxxxxx)","Bilbila fudhataa (9xxxxxxxx)","ተሌፎን ተቐባሊ (9xxxxxxxx)"],
 "መጠን (ቢያንስ 10 ብር)":["Amount (min. 10 Birr)","Hamma (xiqqaatti Birrii 10)","መጠን (ብውሑዱ 10 ብር)"],
 "ፈልግ: ስም / ስልክ / Ref":["Search: name / phone / Ref","Barbaadi: maqaa / bilbila / Ref","ድለ: ስም / ተሌፎን / Ref"],
 // ---- game info ----
@@ -2476,7 +2476,7 @@ const I18N = {
 "ስልክ እና የይለፍ ቃል ያስገቡ":["Enter phone and password","Bilbilaa fi jecha iggitaa galchaa","ተሌፎንን መሕለፊ ቃልን ኣእትዉ"],
 "የተሳሳተ ስልክ ወይም የይለፍ ቃል":["Wrong phone or password","Bilbilli ykn jechi iggitaa dogoggora","ጌጋ ተሌፎን ወይ መሕለፊ ቃል"],
 "ስም ያስገቡ":["Enter a name","Maqaa galchaa","ስም ኣእትዉ"],
-"ትክክለኛ ስልክ (09xxxxxxxx)":["Valid phone (09xxxxxxxx)","Bilbila sirrii (09xxxxxxxx)","ቅኑዕ ተሌፎን (09xxxxxxxx)"],
+"ትክክለኛ ስልክ (9xxxxxxxx ወይም 7xxxxxxxx)":["Valid phone (9xxxxxxxx)","Bilbila sirrii (9xxxxxxxx)","ቅኑዕ ተሌፎን (9xxxxxxxx)"],
 "የይለፍ ቃል ቢያንስ 4 ቁምፊ መሆን አለበት":["Password must be at least 4 characters","Jechi iggitaa xiqqaatti qubee 4 ta'uu qaba","መሕለፊ ቃል ብውሑዱ 4 ፊደል ክኸውን ኣለዎ"],
 "የይለፍ ቃል ቢያንስ 4 ቁምፊ":["Password must be at least 4 characters","Jechi iggitaa xiqqaatti qubee 4","መሕለፊ ቃል ብውሑዱ 4 ፊደል"],
 "የይለፍ ቃሉ አይመሳሰልም":["Passwords do not match","Jechoonni iggitaa wal hin fakkaatan","መሕለፊ ቃላት ኣይመሳሰሉን"],
@@ -2983,6 +2983,38 @@ async function hashPw(p, salt) {
   const k = await crypto.subtle.importKey('raw', enc.encode(p), 'PBKDF2', false, ['deriveBits']);
   return b64(await crypto.subtle.deriveBits({name:'PBKDF2', salt:unb64(salt), iterations:150000, hash:'SHA-256'}, k, 256));
 }
+
+// Phone UX: user types 9 digits (9xxxxxxxx or 7xxxxxxxx). UI shows +251.
+// DB stores 0xxxxxxxxx (09.../07...). SMS uses 251xxxxxxxxx.
+function normPhone(raw) {
+  let s = String(raw || '').replace(/[\s\-\+]/g, '');
+  if (s.startsWith('251') && s.length === 12) s = '0' + s.slice(3);
+  else if (s.length === 9 && /^[97]/.test(s)) s = '0' + s;
+  else if (s.startsWith('0') && s.length === 10) { /* already local */ }
+  return s;
+}
+function isValidPhone(raw) {
+  const s = String(raw || '').replace(/[\s\-\+]/g, '');
+  // 9 digits starting 9 or 7
+  if (/^[97]\d{8}$/.test(s)) return true;
+  // local 09/07
+  if (/^0[97]\d{8}$/.test(s)) return true;
+  // full international 2519/2517
+  if (/^251[97]\d{8}$/.test(s)) return true;
+  return false;
+}
+function smsPhone(raw) {
+  // AfroMessage / international: 2519xxxxxxxx (no +)
+  const local = normPhone(raw);
+  if (/^0[97]\d{8}$/.test(local)) return '251' + local.slice(1);
+  return local;
+}
+function displayPhone(raw) {
+  const local = normPhone(raw);
+  if (/^0[97]\d{8}$/.test(local)) return '+251' + local.slice(1);
+  return raw || '';
+}
+
 let otpCtx = null, otpTick = null, otpLeft = 0;
 function authPanel(p) {
   const _tb = document.querySelector('.auth-tabs'); if (_tb) { _tb.style.display = (p === 'l' || p === 's') ? '' : 'none'; $('atL').classList.toggle('on', p === 'l'); $('atS').classList.toggle('on', p === 's'); }
@@ -3006,7 +3038,7 @@ async function startOtp(phone, purpose, payload) {
 }
 function showOtp(sec) {
   authPanel('o');
-  $('otpSub').textContent = 'ኮዱ ወደ ' + otpCtx.phone + ' ተልኳል';
+  $('otpSub').textContent = 'ኮዱ ወደ ' + displayPhone(otpCtx.phone) + ' ተልኳል';
   otpIn().forEach(i => i.value = '');
   $('otpErr').classList.add('hidden'); chkOtp(); otpIn()[0].focus();
   otpLeft = sec; clearInterval(otpTick); otpTick = setInterval(tickOtp, 1000); tickOtp();
@@ -3034,8 +3066,10 @@ async function submitOtp() {
 }
 async function forgotSubmit() {
   $('fErr').classList.add('hidden');
-  const phone = $('fPhone').value.trim(), a = $('fPass').value, b = $('fPass2').value;
-  if (!/^09\d{8}$/.test(phone)) return err('fErr', 'ትክክለኛ ስልክ (09xxxxxxxx)');
+  const a = $('fPass').value, b = $('fPass2').value;
+  let phone = $('fPhone').value.trim();
+  if (!isValidPhone(phone)) return err('fErr', 'ትክክለኛ ስልክ (9xxxxxxxx ወይም 7xxxxxxxx)');
+  phone = normPhone(phone);
   if (a.length < 4) return err('fErr', 'የይለፍ ቃል ቢያንስ 4 ቁምፊ መሆን አለበት');
   if (a !== b) return err('fErr', 'የይለፍ ቃሉ አይመሳሰልም');
   const salt = newSalt(), hash = await hashPw(a, salt);
@@ -3061,8 +3095,10 @@ async function login() {
   try {
 
   $('lErr').classList.add('hidden');
-  const phone = $('lPhone').value.trim(), pw = $('lPass').value;
+  let phone = $('lPhone').value.trim(); const pw = $('lPass').value;
   if (!phone || !pw) return err('lErr', 'ስልክ እና የይለፍ ቃል ያስገቡ');
+  if (!isValidPhone(phone)) return err('lErr', 'ትክክለኛ ስልክ (9xxxxxxxx ወይም 7xxxxxxxx)');
+  phone = normPhone(phone);
   const { data: salt, error: e0 } = await sb.rpc('get_salt', { p_phone: phone });
   if (e0) return err('lErr', isSchemaErr(e0) ? 'security_setup.sql ገና አልተሰራም (Supabase SQL Editor)' : 'ግንኙነት ተቋርጧል — እንደገና ይሞክሩ');
   const hash = await hashPw(pw, salt);
@@ -3111,9 +3147,11 @@ async function login() {
 async function signup() {
   $('sErr').classList.add('hidden');
   if (!settings?.app_on) return err('sErr', 'አፑ ለጊዜው ዝግ ነው');
-  const name = $('sName').value.trim(), phone = $('sPhone').value.trim(), a = $('sPass').value, b = $('sPass2').value;
+  const name = $('sName').value.trim(), a = $('sPass').value, b = $('sPass2').value;
+  let phone = $('sPhone').value.trim();
   if (!name) return err('sErr', 'ስም ያስገቡ');
-  if (!/^09\d{8}$/.test(phone)) return err('sErr', 'ትክክለኛ ስልክ (09xxxxxxxx)');
+  if (!isValidPhone(phone)) return err('sErr', 'ትክክለኛ ስልክ (9xxxxxxxx ወይም 7xxxxxxxx)');
+  phone = normPhone(phone);
   if (a.length < 4) return err('sErr', 'የይለፍ ቃል ቢያንስ 4 ቁምፊ መሆን አለበት');
   if (a !== b) return err('sErr', 'የይለፍ ቃሉ አይመሳሰልም');
   if (!$('sAge').checked) return err('sErr', 'ዕድሜዎ 18+ መሆኑን ያረጋግጡ');
@@ -3121,16 +3159,18 @@ async function signup() {
   const { data: r, error } = await sb.rpc('app_signup', { p_phone: phone, p_name: name, p_salt: salt, p_hash: hash });
   if (error) return err('sErr', isSchemaErr(error) ? 'security_setup.sql ገና አልተሰራም' : 'ስህተት ተፈጥሯል');
   if (!r.ok) return err('sErr', r.error === 'EXISTS' ? 'ስልኩ ቀድሞ ተመዝግቧል' : r.error === 'APP_OFF' ? 'አፑ ለጊዜው ዝግ ነው' : 'ስህተት ተፈጥሯል');
-  $('lPhone').value = phone;
+  $('lPhone').value = phone.startsWith('0') ? phone.slice(1) : phone;
   // Require 6-digit OTP verification before login
   await startOtp(phone, 'signup', { salt, hash });
 }
 
 async function setupOwner() {
   $('oErr').classList.add('hidden');
-  const name = $('oName').value.trim(), phone = $('oPhone').value.trim(), a = $('oPass').value, b = $('oPass2').value;
+  const name = $('oName').value.trim(), a = $('oPass').value, b = $('oPass2').value;
+  let phone = $('oPhone').value.trim();
   if (!name) return err('oErr', 'ስም ያስገቡ');
-  if (!/^09\d{8}$/.test(phone)) return err('oErr', 'ትክክለኛ ስልክ (09xxxxxxxx)');
+  if (!isValidPhone(phone)) return err('oErr', 'ትክክለኛ ስልክ (9xxxxxxxx ወይም 7xxxxxxxx)');
+  phone = normPhone(phone);
   if (a.length < 4) return err('oErr', 'የይለፍ ቃል ቢያንስ 4 ቁምፊ መሆን አለበት');
   if (a !== b) return err('oErr', 'የይለፍ ቃሉ አይመሳሰልም');
   const salt = newSalt(), hash = await hashPw(a, salt);
@@ -3139,7 +3179,7 @@ async function setupOwner() {
   if (!r.ok && r.error === 'EXISTS') return closeM('mSetup');
   if (!r.ok) return err('oErr', 'ስህተት ተፈጥሯል');
   closeM('mSetup');
-  $('lPhone').value = phone;
+  $('lPhone').value = phone.startsWith('0') ? phone.slice(1) : phone;
   toast('✓ የባለቤት መለያ ተፈጥሯል — ይግቡ');
 }
 
@@ -4245,8 +4285,9 @@ async function withdraw() {
 
 // ---- user → user transfer (atomic, via Supabase RPC: transfer_money) ----
 async function transfer() {
-  const phone = $('trPhone').value.trim(), amt = Math.floor(parseFloat($('trAmt').value));
-  if (!/^09\d{8}$/.test(phone)) return toast('ትክክለኛ ስልክ (09xxxxxxxx)', 'e');
+  let phone = $('trPhone').value.trim(); const amt = Math.floor(parseFloat($('trAmt').value));
+  if (!isValidPhone(phone)) return toast('ትክክለኛ ስልክ (9xxxxxxxx ወይም 7xxxxxxxx)', 'e');
+  phone = normPhone(phone);
   if (!(amt >= 10)) return toast('ቢያንስ 10 ብር', 'e');
   if (phone === cur.phone) return toast('ለራስዎ መላክ አይቻልም', 'e');
   const { data: rs } = await sb.rpc('lookup_user', { p_phone: phone });
@@ -4339,9 +4380,11 @@ async function addAdmin() {
   if (!cur || cur.role !== 'OWNER') return toast('Owner ብቻ', 'e');
   try {
     $('aErr').classList.add('hidden');
-    const role = $('aRole').value, name = $('aName').value.trim(), phone = $('aPhone').value.trim(), pw = $('aPass').value;
+    const role = $('aRole').value, name = $('aName').value.trim(), pw = $('aPass').value;
+    let phone = $('aPhone').value.trim();
     if (!name) return err('aErr', 'ስም ያስገቡ');
-    if (!/^09\d{8}$/.test(phone)) return err('aErr', 'ትክክለኛ ስልክ (09xxxxxxxx)');
+    if (!isValidPhone(phone)) return err('aErr', 'ትክክለኛ ስልክ (9xxxxxxxx ወይም 7xxxxxxxx)');
+    phone = normPhone(phone);
     if (pw.length < 4) return err('aErr', 'የይለፍ ቃል ቢያንስ 4 ቁምፊ');
     const salt = newSalt(), hash = await hashPw(pw, salt);
     const args = { p_phone: phone, p_name: name, p_salt: salt, p_hash: hash, p_role: role, p_force: true, p_owner: cur.id };
