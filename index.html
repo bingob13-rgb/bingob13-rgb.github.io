@@ -1589,7 +1589,7 @@ window.B13_SITE_URL = 'https://bingob13-rgb.github.io/b13/';
       <p id="offBanner" class="hidden text-center text-red-500 font-extrabold text-lg py-1">አፑ ለጊዜው ዝግ ነው!</p>
       <p class="auth-sub">ለመግባት መረጃዎን ያስገቡ</p>
       <label class="auth-lbl">ስልክ ቁጥር</label>
-      <div class="flex gap-2 items-center"><span class="text-sm font-bold shrink-0" style="color:#64748b">+251</span><input id="lPhone" class="inp flex-1" type="tel" inputmode="numeric" maxlength="9" placeholder="9xxxxxxxx"></div>
+      <div class="flex gap-2 items-center"><span class="text-sm font-bold shrink-0" style="color:#64748b">+251</span><input id="lPhone" class="inp flex-1" type="tel" inputmode="numeric" maxlength="16" placeholder="9xxxxxxxx"></div>
       <label class="auth-lbl">የይለፍ ቃል</label>
       <div class="relative"><input id="lPass" class="inp pr-12" type="password"><button type="button" onclick="eye('lPass',this)" class="absolute right-4 top-5 text-lg">👁</button></div>
       <div id="lErr" class="hidden text-red-500 text-xs text-center bg-red-500/10 rounded-lg py-2"></div>
@@ -1606,7 +1606,7 @@ window.B13_SITE_URL = 'https://bingob13-rgb.github.io/b13/';
     <div id="pSign" class="hidden fade space-y-3 max-w-md mx-auto">
       <button onclick="authPanel('l')" class="text-sm font-bold" style="color:#1d5bdc">← ተመለስ</button>
       <h2 class="auth-h">መለያ ክፈት</h2>
-      <div class="flex gap-2 items-center"><span class="text-sm font-bold shrink-0" style="color:#64748b">+251</span><input id="sPhone" class="inp flex-1" type="tel" inputmode="numeric" maxlength="9" placeholder="9xxxxxxxx"></div>
+      <div class="flex gap-2 items-center"><span class="text-sm font-bold shrink-0" style="color:#64748b">+251</span><input id="sPhone" class="inp flex-1" type="tel" inputmode="numeric" maxlength="16" placeholder="9xxxxxxxx"></div>
       <input id="sName" class="inp" placeholder="ሙሉ ስም">
       <div class="relative"><input id="sPass" class="inp pr-12" type="password" placeholder="የይለፍ ቃል (ቢያንስ 4)"><button type="button" onclick="eye('sPass',this)" class="absolute right-3 top-3 text-lg">👁</button></div>
       <div class="relative"><input id="sPass2" class="inp pr-12" type="password" placeholder="የይለፍ ቃል ድገም"><button type="button" onclick="eye('sPass2',this)" class="absolute right-3 top-3 text-lg">👁</button></div>
@@ -1618,7 +1618,7 @@ window.B13_SITE_URL = 'https://bingob13-rgb.github.io/b13/';
       <button onclick="authPanel('l')" class="text-indigo-300 text-sm">← ወደ መግቢያ ተመለስ</button>
       <h2 class="text-2xl font-extrabold">የይለፍ ቃል ረስተዋል?</h2>
       <p class="text-slate-400 text-sm">ስልክዎን እና አዲስ የይለፍ ቃል ያስገቡ</p>
-      <div class="flex gap-2 items-center"><span class="text-sm font-bold shrink-0" style="color:#64748b">+251</span><input id="fPhone" class="inp flex-1" type="tel" inputmode="numeric" maxlength="9" placeholder="9xxxxxxxx"></div>
+      <div class="flex gap-2 items-center"><span class="text-sm font-bold shrink-0" style="color:#64748b">+251</span><input id="fPhone" class="inp flex-1" type="tel" inputmode="numeric" maxlength="16" placeholder="9xxxxxxxx"></div>
       <div class="relative"><input id="fPass" class="inp pr-12" type="password" placeholder="አዲስ የይለፍ ቃል"><button type="button" onclick="eye('fPass',this)" class="absolute right-3 top-3 text-lg">👁</button></div>
       <div class="relative"><input id="fPass2" class="inp pr-12" type="password" placeholder="አዲሱን የይለፍ ቃል ድገም"><button type="button" onclick="eye('fPass2',this)" class="absolute right-3 top-3 text-lg">👁</button></div>
       <div id="fErr" class="hidden text-red-400 text-xs text-center bg-red-500/10 rounded-lg py-2"></div>
@@ -1667,7 +1667,7 @@ window.B13_SITE_URL = 'https://bingob13-rgb.github.io/b13/';
     </div>
     <div class="exp-only glass p-3 mb-2 text-[13px] space-y-2">
       <div class="flex gap-2 items-start"><span class="text-blue-400">🎮</span><span class="text-slate-400" data-i="gi_game">ጨዋታ:</span><b id="giType" class="flex-1">መስመር (Line)</b><button onclick="openHints(game?.type)" class="text-amber-400 text-xl">💡</button></div>
-      <div class="info-more flex gap-2 items-start"><span class="text-slate-400">≡</span><span id="giDesc" class="text-[12px] leading-snug" data-i="gi_desc">መረጃ፦ ቴሌብር (0987215758, 0903252550) እና ንግድ ባንክ (1000066910133) ደረሰኝ በሙሉ ወደ አፕሊኬሽኑ በማስገባት ገቢ (deposit) ማድረግ ትችላላችሁ።</span></div>
+      <div class="info-more flex gap-2 items-start"><span class="text-slate-400">≡</span><span class="flex-1 min-w-0"><span id="giDesc" class="text-[12px] leading-snug block" data-i="gi_desc">መረጃ፦ ቴሌብር (0987215758) እና ንግድ ባንክ (1000066910133) ደረሰኝ በሙሉ ወደ አፕሊኬሽኑ በማስገባት ገቢ (deposit) ማድረግ ትችላላችሁ።</span><button type="button" id="giDescTgl" class="hidden text-blue-500 text-[12px] font-bold" onclick="toggleDesc()">⌄ ተጨማሪ</button></span></div>
       <div class="info-more flex justify-between text-[12px] pt-1 border-t border-white/10">
         <span>▣ <span data-i="gi_code">ኮድ:</span> <b id="giCode">—</b></span>
         <span>🕒 <b id="giTime">—</b></span>
@@ -1795,7 +1795,6 @@ window.B13_SITE_URL = 'https://bingob13-rgb.github.io/b13/';
         <h3 class="font-extrabold" data-i="w_dep">⬇️ ማስገባት (ዲፖዚት)</h3>
         <div class="dstep"><span class="dn">1</span><div class="dtx"><p>ማስገባት የሚፈልጉትን የብር መጠን በትክክል ከታች ካሉት አካውንቶች ወደ አንዱ ይላኩ። <b>የላኪው ስልክ የእርስዎ ስልክ ብቻ መሆን የለበትም</b> — በሌላ ሰው ስልክ መላክ ይቻላል።</p>
           <div class="dacc" onclick="copy('0987215758')"><div><b>0987215758</b><small>Telebirr</small></div><button type="button" onclick="event.stopPropagation();copy('0987215758')">⧉ ኮፒ</button></div>
-          <div class="dacc" onclick="copy('0903252550')"><div><b>0903252550</b><small>Telebirr</small></div><button type="button" onclick="event.stopPropagation();copy('0903252550')">⧉ ኮፒ</button></div>
           <div class="dacc" onclick="copy('1000066910133')"><div><b>1000066910133</b><small>ንግድ ባንክ (CBE)</small></div><button type="button" onclick="event.stopPropagation();copy('1000066910133')">⧉ ኮፒ</button></div>
         </div></div>
         <div class="dstep"><span class="dn">2</span><div class="dtx"><p>ከክፍያ በኋላ የሚመጣውን ሙሉ የኤስኤምኤስ መልእክት ኮፒ አድርገው ከታች ባለው መስክ ይለጥፉ — Transaction ቁጥሩ በራሱ ይወጣል። ቁጥሩን በእጅ ማስገባትም ይችላሉ።</p></div></div>
@@ -1818,7 +1817,7 @@ window.B13_SITE_URL = 'https://bingob13-rgb.github.io/b13/';
       <div id="wTr" class="card p-4 space-y-3 hidden">
         <h3 class="font-extrabold" data-i="w_tr">⇄ ብር ላክ (ወደ ሌላ ተጠቃሚ)</h3>
         <p class="text-[12px] text-slate-400" data-i="w_tr_note">የተቀባዩን ስልክ ቁጥር ያስገቡ። ብሩ ወዲያውኑ ይላካል።</p>
-        <div class="flex gap-2 items-center"><span class="text-sm font-bold shrink-0" style="color:#64748b">+251</span><input id="trPhone" class="inp flex-1" type="tel" inputmode="numeric" maxlength="9" placeholder="9xxxxxxxx" data-ip="ph_tr_phone"></div>
+        <div class="flex gap-2 items-center"><span class="text-sm font-bold shrink-0" style="color:#64748b">+251</span><input id="trPhone" class="inp flex-1" type="tel" inputmode="numeric" maxlength="16" placeholder="9xxxxxxxx" data-ip="ph_tr_phone"></div>
         <input id="trAmt" type="number" min="10" class="inp" placeholder="መጠን (ቢያንስ 10 ብር)" data-ip="ph_amt10">
         <button class="btn b-p" id="btnTransfer" data-i="w_tr_btn">ብር ላክ</button>
       </div>
@@ -1861,19 +1860,23 @@ window.B13_SITE_URL = 'https://bingob13-rgb.github.io/b13/';
           <p class="hint">ጨዋታዎችን በቅደም ተከተል ያዝዙ። አንዱ ሲያልቅ ቀጣዩ በራሱ ይጀምራል — እስኪያቆሙ ድረስ ይቀጥላል።</p>
           <div id="qList" class="space-y-2.5"></div>
           <div class="adm-actions" style="margin-top:14px">
-            <button class="btn b-ok sm !w-full" onclick="editQ(-1)">➕ ጨዋታ ጨምር</button>
-            <button class="btn b-p sm !w-full" onclick="addQ10()">➕ 10 ጨምር</button>
+            <button class="btn b-ok sm !w-full" onclick="editQ(-1)">➕ የክፍያ ጨዋታ</button>
+            <button class="btn b-gold sm !w-full" onclick="addFreeGame()">🎁 ነፃ ጨዋታ</button>
           </div>
-          <button class="btn b-gray sm !w-full" style="margin-top:8px" onclick="clearQ()">🗑 ሁሉንም አጥፋ</button>
+          <div class="adm-actions" style="margin-top:8px">
+            <button class="btn b-p sm !w-full" onclick="addQ10()">➕ 10 ተመሳሳይ</button>
+            <button class="btn b-gray sm !w-full" onclick="clearQ()">🗑 ሁሉንም አጥፋ</button>
+          </div>
+          <p class="hint" style="margin-top:10px;margin-bottom:0">ምሳሌ፦ 1 ነፃ + 5 የክፍያ — ነፃውን ከላይ፣ ከዚያ 5 ጊዜ «የክፍያ» ይጨምሩ። ቅደም ተከተሉን ▲▼ ይቀይሩ።</p>
         </div>
 
         <div class="adm-card">
           <h3>⚙️ ጠቅላላ ቅንብር</h3>
           <label class="text-[12px] font-bold block mb-2">🎴 ከፍተኛ ካርቴላ (በአንድ ሰው)</label>
           <div class="flex items-center gap-2">
-            <button class="stp" onclick="stp('cfgMax',-5,1,1000000)">−</button>
-            <input id="cfgMax" type="number" min="1" max="1000000" class="inp text-center font-extrabold text-lg" oninput="cfgDirty=true">
-            <button class="stp" onclick="stp('cfgMax',5,1,1000000)">+</button>
+            <button class="stp" onclick="stp('cfgMax',-1,1,6)">−</button>
+            <input id="cfgMax" type="number" min="1" max="6" class="inp text-center font-extrabold text-lg" oninput="cfgDirty=true">
+            <button class="stp" onclick="stp('cfgMax',1,1,6)">+</button>
           </div>
           <p class="hint" style="margin-top:8px;margin-bottom:0">አንድ ተጫዋች በአንድ ጨዋታ መግዛት የሚችለው ከፍተኛ ብዛት።</p>
         </div>
@@ -1953,6 +1956,7 @@ window.B13_SITE_URL = 'https://bingob13-rgb.github.io/b13/';
         <button class="otab" data-t="avatar" onclick="oTab('avatar')">✈️ Avatar</button>
         <button class="otab" data-t="staff" onclick="oTab('staff')">🛡️ አድሚኖች</button>
         <button class="otab" data-t="users" onclick="oTab('users')">👥 ተጠቃሚዎች</button>
+        <button class="otab" data-t="notice" onclick="oTab('notice')">📢 ማስታወቂያ</button>
         <button class="otab" data-t="safe" onclick="oTab('safe')">🔒 ሴፍቲ</button>
       </div>
       <div id="ot-admstat" class="hidden space-y-3">
@@ -2009,7 +2013,7 @@ window.B13_SITE_URL = 'https://bingob13-rgb.github.io/b13/';
           <h3 class="font-bold text-sm text-indigo-300">➕ አዲስ አድሚን ፍጠር</h3>
           <select id="aRole" class="inp"><option value="ADMIN_GAME">🎮 ጨዋታ አድሚን</option><option value="ADMIN_FINANCE">💰 ሒሳብ አድሚን</option></select>
           <input id="aName" class="inp" placeholder="ሙሉ ስም">
-          <div class="flex gap-2 items-center"><span class="text-sm font-bold shrink-0" style="color:#64748b">+251</span><input id="aPhone" class="inp flex-1" type="tel" inputmode="numeric" maxlength="9" placeholder="9xxxxxxxx"></div>
+          <div class="flex gap-2 items-center"><span class="text-sm font-bold shrink-0" style="color:#64748b">+251</span><input id="aPhone" class="inp flex-1" type="tel" inputmode="numeric" maxlength="16" placeholder="9xxxxxxxx"></div>
           <div class="relative"><input id="aPass" class="inp pr-12" type="password" placeholder="የይለፍ ቃል (ቢያንስ 4)"><button type="button" onclick="eye('aPass',this)" class="absolute right-3 top-3 text-lg">👁</button></div>
           <div id="aErr" class="hidden text-red-400 text-xs text-center"></div>
           <button class="btn b-p" id="btnAddAdmin">አድሚን ፍጠር</button>
@@ -2037,6 +2041,15 @@ window.B13_SITE_URL = 'https://bingob13-rgb.github.io/b13/';
         <div class="adm-card space-y-3">
           <input id="ouSearch" class="inp !py-2 !text-sm" placeholder="ፈልግ: ስም / ስልክ / ሚና" oninput="renderOwnerUsers()">
           <div id="oUsers" class="space-y-2 max-h-[60vh] overflow-y-auto text-xs"></div>
+        </div>
+      </div>
+      <div id="ot-notice" class="hidden glass p-4 space-y-3">
+        <div><h3 class="font-bold text-sm text-amber-300">📢 ማስታወቂያ (ለሁሉም ተጠቃሚዎች)</h3>
+        <p class="text-[11px] text-slate-400">እዚህ የሚጽፉት መልዕክት በሁሉም ተጠቃሚዎች የጨዋታ መረጃ ቦታ ላይ ይታያል። ባዶ ከተዉት ነባሩ መረጃ ይታያል።</p></div>
+        <textarea id="noticeTxt" rows="5" maxlength="500" class="inp" placeholder="ለምሳሌ፦ ለዛሬ ጨዋታው አብቅቷል — መልካም አዳር!"></textarea>
+        <div class="flex gap-2">
+          <button type="button" class="btn sm b-ok flex-1" onclick="saveNotice()">✓ አስቀምጥ</button>
+          <button type="button" class="btn sm flex-1" onclick="resetNotice()">↺ ነባሩን መልስ</button>
         </div>
       </div>
       <div id="ot-safe" class="hidden glass p-4 flex items-center justify-between gap-3">
@@ -2084,7 +2097,7 @@ window.B13_SITE_URL = 'https://bingob13-rgb.github.io/b13/';
       <div class="flex items-center justify-between gap-2"><span data-i="s_lang">🌐 ቋንቋ</span>
         <select id="sLang" class="inp !w-auto !py-2 !text-xs" onchange="setPref('lang',this.value)"><option value="am">አማርኛ</option><option value="en">English</option><option value="om">Afaan Oromoo</option><option value="ti">ትግርኛ</option></select></div></div>
     <div class="card p-4 space-y-2"><div class="font-bold" data-i="c_title">❓ ያግኙን</div>
-      <div class="text-[13px]"><span data-i="c_phone">📱 እኛን ለማግኘት ስልክ:</span> <button onclick="copy('0987215758')" class="font-bold">0987215758</button> , <button onclick="copy('0903252550')" class="font-bold">0903252550</button></div>
+      <div class="text-[13px]"><span data-i="c_phone">📱 እኛን ለማግኘት ስልክ:</span> <button onclick="copy('0987215758')" class="font-bold">0987215758</button></div>
       <div class="flex justify-between items-center"><span>✈️ Telegram</span><button onclick="window.open(TG_LINK,'_blank')" class="text-blue-400 font-bold">Open</button></div></div>
     <div class="card p-4 flex items-center justify-between"><span data-i="r_title">📘 የጨዋታ ደንቦችና ሕጎች</span><button onclick="openM('mRules')" class="text-blue-400 font-bold" data-i="r_read">አንብብ</button></div>
     <button id="dAdm" onclick="closeDrawer();go('admin')" class="hidden w-full py-3 bg-blue-500/20 text-blue-400 font-bold rounded-xl" data-i="d_admin">🛡️ አድሚን ፓነል</button>
@@ -2161,7 +2174,7 @@ window.B13_SITE_URL = 'https://bingob13-rgb.github.io/b13/';
     <h3 class="font-extrabold text-lg">👑 የባለቤት (Owner) መለያ ይፍጠሩ</h3>
     <p class="text-xs text-slate-400">የመጀመሪያ ጊዜ ማዋቀር። ይህ መለያ ሁሉንም ይቆጣጠራል።</p>
     <input id="oName" class="inp" placeholder="ሙሉ ስም">
-    <div class="flex gap-2 items-center"><span class="text-sm font-bold shrink-0" style="color:#64748b">+251</span><input id="oPhone" class="inp flex-1" type="tel" inputmode="numeric" maxlength="9" placeholder="9xxxxxxxx"></div>
+    <div class="flex gap-2 items-center"><span class="text-sm font-bold shrink-0" style="color:#64748b">+251</span><input id="oPhone" class="inp flex-1" type="tel" inputmode="numeric" maxlength="16" placeholder="9xxxxxxxx"></div>
     <div class="relative"><input id="oPass" class="inp pr-12" type="password" placeholder="የይለፍ ቃል (ቢያንስ 4)"><button type="button" onclick="eye('oPass',this)" class="absolute right-3 top-3 text-lg">👁</button></div>
     <div class="relative"><input id="oPass2" class="inp pr-12" type="password" placeholder="የይለፍ ቃል ድገም"><button type="button" onclick="eye('oPass2',this)" class="absolute right-3 top-3 text-lg">👁</button></div>
     <div id="oErr" class="hidden text-red-400 text-xs text-center"></div>
@@ -2173,12 +2186,17 @@ window.B13_SITE_URL = 'https://bingob13-rgb.github.io/b13/';
   <div class="card w-full max-w-sm fade p-4 max-h-[92vh] overflow-y-auto space-y-3">
     <b class="text-lg">🎮 ጨዋታ አስተካክል</b>
     <input type="hidden" id="qType" value="line">
-    <div id="qTypeGrid" class="grid grid-cols-4 gap-2 max-h-[32vh] overflow-y-auto pr-1"></div>
+    <div id="qTypeGrid" class="grid grid-cols-4 gap-2 max-h-[36vh] overflow-y-auto pr-1"></div>
     <p id="qTypeDesc" class="text-[11px] text-slate-400 leading-relaxed"></p>
     <div class="space-y-1"><label class="text-[12px] font-bold">💵 ዋጋ (ብር)</label>
-          <div class="flex items-center gap-2"><button class="stp" onclick="stp('qPrice',-5,1,100000)">−</button><input id="qPrice" type="number" min="1" max="100000" class="inp text-center font-extrabold text-lg" oninput=""><button class="stp" onclick="stp('qPrice',5,1,100000)">+</button></div></div>
-    <div class="space-y-1"><label class="text-[12px] font-bold">🏆 ለአሸናፊ የሚሰጥ %</label>
-          <div class="flex items-center gap-2"><button class="stp" onclick="stp('qPct',-5,1,100)">−</button><input id="qPct" type="number" min="1" max="100" class="inp text-center font-extrabold text-lg" oninput=""><button class="stp" onclick="stp('qPct',5,1,100)">+</button></div></div>
+          <div class="flex items-center gap-2"><button class="stp" onclick="stp('qPrice',-5,0,100000)">−</button><input id="qPrice" type="number" min="0" max="100000" class="inp text-center font-extrabold text-lg" oninput="syncFreeUi()"><button class="stp" onclick="stp('qPrice',5,0,100000);syncFreeUi()">+</button></div>
+          <p class="text-[11px] text-slate-400">0 = ነፃ ጨዋታ · ከ1 በላይ = የክፍያ ጨዋታ</p></div>
+    <div id="freePrizeWrap" class="space-y-1"><label class="text-[12px] font-bold">🎁 ነፃ ሽልማት (ብር)</label>
+          <div class="flex items-center gap-2"><button class="stp" onclick="stp('qFreePrize',-10,0,1000000)">−</button><input id="qFreePrize" type="number" min="0" max="1000000" class="inp text-center font-extrabold text-lg" value="0"><button class="stp" onclick="stp('qFreePrize',10,0,1000000)">+</button></div>
+          <p class="text-[11px] text-slate-400">ለነፃ ጨዋታ ብቻ — አሸናፊው የሚቀበለው ቋሚ ብር</p></div>
+    <div id="pctWrap" class="space-y-1"><label class="text-[12px] font-bold">🏆 ለአሸናፊ የሚሰጥ %</label>
+          <div class="flex items-center gap-2"><button class="stp" onclick="stp('qPct',-5,1,100)">−</button><input id="qPct" type="number" min="1" max="100" class="inp text-center font-extrabold text-lg" oninput=""><button class="stp" onclick="stp('qPct',5,1,100)">+</button></div>
+          <p class="text-[11px] text-slate-400">ከጠቅላላ pool — የክፍያ ጨዋታ ላይ ብቻ</p></div>
     <div class="space-y-1"><label class="text-[12px] font-bold">🔔 የኳስ ጥሪ (ሰከንድ)</label>
           <div class="flex items-center gap-2"><button class="stp" onclick="stp('qInt',-1,2,60)">−</button><input id="qInt" type="number" min="2" max="60" class="inp text-center font-extrabold text-lg" oninput=""><button class="stp" onclick="stp('qInt',1,2,60)">+</button></div></div>
     <div class="space-y-1"><label class="text-[12px] font-bold">⏳ ዝግጅት ጊዜ (ደቂቃ)</label>
@@ -2272,10 +2290,10 @@ const I18N = {
 // ---- game info ----
 "ጨዋታ":["Game","Taphaa","ጸወታ"],
 "መስመር (Line)":["Line","Sarara (Line)","መስመር (Line)"],
-"መረጃ፦ ቴሌብር (0987215758, 0903252550) እና ንግድ ባንክ (1000066910133) ደረሰኝ በሙሉ ወደ አፕሊኬሽኑ በማስገባት ገቢ (deposit) ማድረግ ትችላላችሁ።":["Info: You can deposit by sending to Telebirr (0987215758, 0903252550) or CBE (1000066910133) and entering the receipt in the app.","Odeeffannoo: Telebirr (0987215758, 0903252550) fi Baankii Daldalaa (1000066910133) tiin erguun ragaa (receipt) appii keessatti galchuun galchii (deposit) gochuu dandeessu.","ሓበሬታ: ብቴሌብር (0987215758, 0903252550) ከምኡውን ብንግዲ ባንክ (1000066910133) ልኢኽኩም ደረሰኝ ኣብ ኣፕሊኬሽን ብምእታው ዲፖዚት ክትገብሩ ትኽእሉ።"],
+"መረጃ፦ ቴሌብር (0987215758) እና ንግድ ባንክ (1000066910133) ደረሰኝ በሙሉ ወደ አፕሊኬሽኑ በማስገባት ገቢ (deposit) ማድረግ ትችላላችሁ።":["Info: You can deposit by sending to Telebirr (0987215758) or CBE (1000066910133) and entering the receipt in the app.","Odeeffannoo: Telebirr (0987215758) fi Baankii Daldalaa (1000066910133) tiin erguun ragaa (receipt) appii keessatti galchuun galchii (deposit) gochuu dandeessu.","ሓበሬታ: ብቴሌብር (0987215758) ከምኡውን ብንግዲ ባንክ (1000066910133) ልኢኽኩም ደረሰኝ ኣብ ኣፕሊኬሽን ብምእታው ዲፖዚት ክትገብሩ ትኽእሉ።"],
 "ኮድ":["Code","Koodii","ኮድ"],
 "ዋጋ":["Price","Gatii","ዋጋ"],
-"የጨዋታ ብዛት":["Players","Baay'ina taphataa","ብዝሒ ተጻወቲ"],
+"የጨዋታ ብዛት":["Games","Baay'ina taphataa","ብዝሒ ተጻወቲ"],
 "ሽልማት":["Prize","Badhaasa","ሽልማት"],
 "የወጡ ኳሶች ብዛት":["Balls drawn","Baay'ina kubbaa ba'e","ብዝሒ ዝወጹ ኳሶታት"],
 "ቢንጎ ያሉ ካርቴላ":["Bingo cards","Kaartelaa bingoo jedhan","ቢንጎ ዝበሉ ካርተላታት"],
@@ -2519,6 +2537,8 @@ const I18N = {
 "የቤት ትርፍ":["House profit","Bu'aa mana taphaa","ትርፊ ቤት"],
 "ብር":["Birr","Birrii","ብር"],
 "ተጫዋቾች":["Players","Taphattoota","ተጻወቲ"],
+"ጨዋታዎች":["Games","Taphoota","ጸወታታት"],
+"ነፃ (ቦነስ)":["Free","Bilisaa (Boonasii)","ነጻ (ቦነስ)"],
 "ኳሶች":["Balls","Kubbaawwan","ኳሶታት"],
 "ትርፍ":["Profit","Bu'aa","ትርፊ"],
 "እሴቶቹን ያረጋግጡ":["Please check the values","Gatiiwwan mirkaneessaa","እቶም ዋጋታት ኣረጋግጹ"],
@@ -2778,7 +2798,7 @@ function notifyUser(msg) {
 
 const $ = id => document.getElementById(id);
 const esc = s => String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const SETUP_SQL = "-- ===== B13 BINGO v8 — Supabase SQL (run once; safe to re-run) =====\n\n-- 1) columns\nalter table settings add column if not exists auto_on boolean default false;\nalter table settings add column if not exists gap_min int default 10;\nalter table settings add column if not exists game_type text default 'line';\nalter table settings add column if not exists game_queue jsonb default '[]'::jsonb;\nalter table settings add column if not exists queue_idx int default 0;\nalter table games add column if not exists start_at timestamptz;\nalter table games add column if not exists paid boolean default false;\nalter table games add column if not exists prize numeric default 0;\nalter table games add column if not exists price numeric;\nalter table games add column if not exists winner_pct int;\nalter table games add column if not exists interval_sec int;\nalter table transactions add column if not exists approved_by bigint references users(id);\nalter table transactions add column if not exists created_at timestamptz default now();\nalter table transactions drop constraint if exists transactions_type_check;\nalter table games drop constraint if exists games_type_check;\nalter table settings drop constraint if exists settings_game_type_check;\nalter table cards alter column game_id drop not null;\nalter table users add column if not exists verified boolean default true;\n\n-- 2) game finish (pays the winner)\ncreate or replace function b13_finish(p_game bigint) returns void\nlanguage plpgsql security definer set search_path = public as $$\ndeclare g games%rowtype; s settings%rowtype; v_wn int; v_pool numeric; v_prize numeric; v_per numeric;\nbegin\n  select * into s from settings where id = 1;\n  select * into g from games where id = p_game for update;\n  if not found or g.status = 'finished' then return; end if;\n  select coalesce(sum(coalesce(price, g.price, s.price)), 0) into v_pool from cards where game_id = p_game and registered;\n  select count(*) into v_wn from cards where game_id = p_game and won;\n  v_prize := floor(v_pool * coalesce(g.winner_pct, s.winner_pct, 70) / 100);\n  if v_wn > 0 and not coalesce(g.paid, false) then\n    v_per := floor(v_prize / v_wn);\n    update users u set balance = u.balance + v_per * w.c\n      from (select user_id, count(*) c from cards where game_id = p_game and won group by user_id) w\n      where u.id = w.user_id;\n    insert into transactions (user_id, type, amount, method, ref, status, processed_at)\n      select user_id, 'PRIZE', v_per * count(*), 'Prize', coalesce(g.code, ''), 'APPROVED', now()\n      from cards where game_id = p_game and won group by user_id;\n  end if;\n  update games set status = 'finished', finished_at = now(), paid = true, prize = v_prize, draw_on = false where id = p_game;\nend; $$;\n\n-- 3) apply the next game from the queue (loops forever)\ncreate or replace function b13_apply_next(p_game bigint) returns void\nlanguage plpgsql security definer set search_path = public as $$\ndeclare s settings%rowtype; q jsonb; n int; it jsonb; i int;\nbegin\n  select * into s from settings where id = 1;\n  q := coalesce(s.game_queue, '[]'::jsonb); n := jsonb_array_length(q);\n  if n > 0 then\n    i := coalesce(s.queue_idx, 0) % n; it := q -> i;\n    update games set type = coalesce(it->>'type', 'line'),\n      price = nullif(it->>'price','')::numeric, winner_pct = nullif(it->>'pct','')::int,\n      interval_sec = nullif(it->>'int','')::int,\n      start_at = now() + make_interval(mins => greatest(coalesce(nullif(it->>'wait','')::int, s.gap_min, 10), 1))\n      where id = p_game;\n    update settings set queue_idx = (i + 1) % n where id = 1;\n  else\n    update games set type = coalesce(s.game_type, type, 'line'), price = null, winner_pct = null, interval_sec = null,\n      start_at = now() + make_interval(mins => greatest(coalesce(s.gap_min, 10), 1)) where id = p_game;\n  end if;\nend; $$;\n\n-- 4) the game engine\ncreate or replace function auto_tick() returns text\nlanguage plpgsql security definer set search_path = public as $$\ndeclare s settings%rowtype; g games%rowtype;\n  n int; v_reg int; v_new bigint; d int[]; ivl interval;\nbegin\n  select * into s from settings where id = 1;\n  if not found or not coalesce(s.app_on, true) then return 'off'; end if;\n  select * into g from games order by id desc limit 1 for update;\n  if not found then return 'nogame'; end if;\n  ivl := make_interval(secs => greatest(coalesce(g.interval_sec, s.interval_sec, 10), 2));\n  d := coalesce(g.drawn, '{}'::int[]);\n\n  if g.status = 'playing' then\n    if coalesce(g.draw_on, true) and (g.last_draw is null or now() >= g.last_draw + ivl) then\n      if coalesce(array_length(d, 1), 0) >= 75 then perform b13_finish(g.id); return 'finished'; end if;\n      loop n := 1 + floor(random() * 75)::int; exit when not (n = any(d)); end loop;\n      update games set drawn = array_append(d, n), last_draw = now() where id = g.id;\n      return 'drawn';\n    end if;\n    return 'wait';\n  elsif g.status = 'claiming' then\n    if now() >= coalesce(g.claim_end, now()) then perform b13_finish(g.id); return 'finished'; end if;\n    return 'claiming';\n  elsif g.status = 'finished' then\n    if coalesce(s.auto_on, false) and now() >= coalesce(g.finished_at, now()) + interval '60 seconds' then\n      insert into games (status, drawn, draw_on) values ('waiting', '{}', false) returning id into v_new;\n      perform b13_apply_next(v_new);\n      update cards set game_id = v_new where game_id is null;\n      return 'new_game';\n    end if;\n    return 'finished_wait';\n  else\n    update cards set game_id = g.id where game_id is null;\n    if not coalesce(s.auto_on, false) then return 'manual'; end if;\n    if g.start_at is null then perform b13_apply_next(g.id); return 'scheduled'; end if;\n    if now() >= g.start_at then\n      select count(*) into v_reg from cards where game_id = g.id and registered;\n      if v_reg > 0 then\n        update games set status = 'playing', drawn = '{}', draw_on = true, last_draw = now(),\n          claim_end = null, finished_at = null, code = substr(md5(random()::text), 1, 8) where id = g.id;\n        return 'started';\n      else\n        update games set start_at = now() + make_interval(mins => greatest(coalesce(s.gap_min, 10), 1)) where id = g.id;\n        return 'no_players';\n      end if;\n    end if;\n    return 'waiting';\n  end if;\nend; $$;\n\n-- 5) OTP (SMS via AfroMessage)\ncreate extension if not exists pg_net with schema extensions;\ncreate table if not exists otps (phone text primary key, code_hash text, purpose text, expires_at timestamptz, attempts int default 0, last_sent timestamptz default now());\ncreate table if not exists sms_config (id int primary key default 1, token text, sender text, identifier text, debug boolean default false);\ninsert into sms_config (id) values (1) on conflict do nothing;\nalter table otps enable row level security;        -- no policy => the browser key cannot read these\nalter table sms_config enable row level security;\n\ncreate or replace function send_otp(p_phone text, p_purpose text) returns json\nlanguage plpgsql security definer set search_path = public, extensions as $$\ndeclare c sms_config%rowtype; v_code text; u users%rowtype; o otps%rowtype;\nbegin\n  select * into u from users where phone = p_phone;\n  if not found then return json_build_object('ok', false, 'error', 'NO_USER'); end if;\n  if p_purpose = 'signup' and coalesce(u.verified, true) then return json_build_object('ok', false, 'error', 'ALREADY'); end if;\n  select * into o from otps where phone = p_phone;\n  if found and o.last_sent > now() - interval '60 seconds' then\n    return json_build_object('ok', false, 'error', 'WAIT', 'wait', ceil(extract(epoch from (o.last_sent + interval '60 seconds' - now())))::int);\n  end if;\n  v_code := lpad((floor(random() * 1000000))::int::text, 6, '0');\n  insert into otps (phone, code_hash, purpose, expires_at, attempts, last_sent)\n    values (p_phone, md5(v_code || p_phone), p_purpose, now() + interval '5 minutes', 0, now())\n    on conflict (phone) do update set code_hash = excluded.code_hash, purpose = excluded.purpose,\n      expires_at = excluded.expires_at, attempts = 0, last_sent = now();\n  select * into c from sms_config where id = 1;\n  if coalesce(c.debug, false) then return json_build_object('ok', true, 'debug_code', v_code); end if;\n  if c.token is null then return json_build_object('ok', false, 'error', 'NO_SMS'); end if;\n  perform net.http_post(\n    url := 'https://api.afromessage.com/api/send',\n    headers := jsonb_build_object('Content-Type', 'application/json', 'Authorization', 'Bearer ' || c.token),\n    body := jsonb_strip_nulls(jsonb_build_object('from', c.identifier, 'sender', c.sender, 'to', p_phone,\n             'message', 'B13 Bingo: ' || v_code || ' is your verification code. Valid for 5 minutes.')));\n  return json_build_object('ok', true);\nend; $$;\n\ncreate or replace function verify_otp(p_phone text, p_code text, p_purpose text) returns json\nlanguage plpgsql security definer set search_path = public as $$\ndeclare o otps%rowtype;\nbegin\n  select * into o from otps where phone = p_phone and purpose = p_purpose for update;\n  if not found or o.expires_at < now() then return json_build_object('ok', false, 'error', 'EXPIRED'); end if;\n  if o.attempts >= 5 then return json_build_object('ok', false, 'error', 'LOCKED'); end if;\n  if o.code_hash <> md5(p_code || p_phone) then\n    update otps set attempts = attempts + 1 where phone = p_phone;\n    return json_build_object('ok', false, 'error', 'BAD_CODE');\n  end if;\n  update users set verified = true where phone = p_phone;\n  delete from otps where phone = p_phone;\n  return json_build_object('ok', true);\nend; $$;\n\ncreate or replace function reset_password(p_phone text, p_code text, p_salt text, p_hash text) returns json\nlanguage plpgsql security definer set search_path = public as $$\ndeclare o otps%rowtype;\nbegin\n  select * into o from otps where phone = p_phone and purpose = 'reset' for update;\n  if not found or o.expires_at < now() then return json_build_object('ok', false, 'error', 'EXPIRED'); end if;\n  if o.attempts >= 5 then return json_build_object('ok', false, 'error', 'LOCKED'); end if;\n  if o.code_hash <> md5(p_code || p_phone) then\n    update otps set attempts = attempts + 1 where phone = p_phone;\n    return json_build_object('ok', false, 'error', 'BAD_CODE');\n  end if;\n  update users set salt = p_salt, hash = p_hash, verified = true where phone = p_phone;\n  delete from otps where phone = p_phone;\n  return json_build_object('ok', true);\nend; $$;\n\ngrant execute on function auto_tick() to anon, authenticated;\ngrant execute on function b13_finish(bigint) to anon, authenticated;\ngrant execute on function b13_apply_next(bigint) to anon, authenticated;\ngrant execute on function send_otp(text, text) to anon, authenticated;\ngrant execute on function verify_otp(text, text, text) to anon, authenticated;\ngrant execute on function reset_password(text, text, text, text) to anon, authenticated;\n\n-- 6) SMS settings (fill in YOUR AfroMessage values, then run)\n-- update sms_config set token = 'YOUR_API_TOKEN', sender = 'YOUR_SENDER_NAME', identifier = 'YOUR_IDENTIFIER_ID' where id = 1;\n-- Testing without SMS (shows the code on screen — turn OFF for real use):\n-- update sms_config set debug = true where id = 1;\n\n-- 7) optional: run the engine 24/7 even when nobody has the app open\n-- create extension if not exists pg_cron;\n-- select cron.schedule('b13_auto_tick', '5 seconds', 'select auto_tick()');\n\n-- 8) IMPORTANT: refresh the API cache so the new columns/functions are visible\nnotify pgrst, 'reload schema';\n";
+const SETUP_SQL = "-- ===== B13 BINGO v8 — Supabase SQL (run once; safe to re-run) =====\n\n-- 1) columns\nalter table settings add column if not exists auto_on boolean default false;\nalter table settings add column if not exists gap_min int default 10;\nalter table settings add column if not exists game_type text default 'line';\nalter table settings add column if not exists game_queue jsonb default '[]'::jsonb;\nalter table settings add column if not exists queue_idx int default 0;\nalter table games add column if not exists start_at timestamptz;\nalter table games add column if not exists paid boolean default false;\nalter table games add column if not exists prize numeric default 0;\nalter table games add column if not exists price numeric;\nalter table games add column if not exists winner_pct int;\nalter table games add column if not exists interval_sec int;\nalter table games add column if not exists free_prize numeric;\nalter table settings add column if not exists free_prize numeric default 0;\nalter table settings add column if not exists notice text default '';\nalter table transactions add column if not exists approved_by bigint references users(id);\nalter table transactions add column if not exists created_at timestamptz default now();\nalter table transactions drop constraint if exists transactions_type_check;\nalter table games drop constraint if exists games_type_check;\nalter table settings drop constraint if exists settings_game_type_check;\nalter table cards alter column game_id drop not null;\nalter table users add column if not exists verified boolean default true;\n\n-- 2) game finish (pays the winner)\ncreate or replace function b13_finish(p_game bigint) returns void\nlanguage plpgsql security definer set search_path = public as $$\n#variable_conflict use_column\ndeclare g games%rowtype; s settings%rowtype; v_wn int; v_pool numeric; v_prize numeric; v_per numeric; v_price numeric;\nbegin\n  select * into s from settings where id = 1;\n  select * into g from games where id = p_game for update;\n  if not found or g.status = 'finished' then return; end if;\n  select coalesce(sum(coalesce(price, g.price, s.price)), 0) into v_pool from cards where game_id = p_game and registered;\n  -- winners = distinct people with a valid bingo (prize is split equally between them)\n  select count(distinct user_id) into v_wn from cards where game_id = p_game and won;\n  v_price := coalesce(g.price, s.price, 0);\n  if v_price = 0 then v_prize := coalesce(g.free_prize, s.free_prize, 0);  -- free (bonus) game: fixed prize\n  else v_prize := floor(v_pool * coalesce(g.winner_pct, s.winner_pct, 70) / 100); end if;\n  if v_wn > 0 and not coalesce(g.paid, false) then\n    v_per := floor(v_prize / v_wn);\n    update users u set balance = u.balance + v_per where u.id in (select distinct user_id from cards where game_id = p_game and won);\n    insert into transactions (user_id, type, amount, method, ref, status, processed_at)\n      select user_id, 'PRIZE', v_per, 'Prize', coalesce(g.code, ''), 'APPROVED', now()\n      from cards where game_id = p_game and won group by user_id;\n  end if;\n  update games set status = 'finished', finished_at = now(), paid = true, prize = v_prize, draw_on = false where id = p_game;\nend; $$;\n\n-- 3) apply the next game from the queue (loops forever)\ncreate or replace function b13_apply_next(p_game bigint) returns void\nlanguage plpgsql security definer set search_path = public as $$\n#variable_conflict use_column\ndeclare s settings%rowtype; q jsonb; n int; it jsonb; i int;\nbegin\n  select * into s from settings where id = 1;\n  q := coalesce(s.game_queue, '[]'::jsonb); n := jsonb_array_length(q);\n  if n > 0 then\n    i := coalesce(s.queue_idx, 0) % n; it := q -> i;\n    update games set type = coalesce(it->>'type', 'line'),\n      price = nullif(it->>'price','')::numeric, winner_pct = nullif(it->>'pct','')::int,\n      interval_sec = nullif(it->>'int','')::int, free_prize = nullif(it->>'free_prize','')::numeric,\n      start_at = now() + make_interval(mins => greatest(coalesce(nullif(it->>'wait','')::int, s.gap_min, 10), 1))\n      where id = p_game;\n    update settings set queue_idx = (i + 1) % n where id = 1;\n  else\n    update games set type = coalesce(s.game_type, type, 'line'), price = null, winner_pct = null, interval_sec = null,\n      start_at = now() + make_interval(mins => greatest(coalesce(s.gap_min, 10), 1)) where id = p_game;\n  end if;\nend; $$;\n\n-- 4) the game engine\ndrop function if exists auto_tick();\ncreate or replace function auto_tick() returns text\nlanguage plpgsql security definer set search_path = public as $$\n#variable_conflict use_column\ndeclare s settings%rowtype; g games%rowtype;\n  n int; v_reg int; v_new bigint; d int[]; ivl interval;\nbegin\n  select * into s from settings where id = 1;\n  if not found or not coalesce(s.app_on, true) then return 'off'; end if;\n  select * into g from games order by id desc limit 1 for update;\n  if not found then return 'nogame'; end if;\n  ivl := make_interval(secs => greatest(coalesce(g.interval_sec, s.interval_sec, 10), 2));\n  d := coalesce(g.drawn, '{}'::int[]);\n\n  if g.status = 'playing' then\n    if coalesce(g.draw_on, true) and (g.last_draw is null or now() >= g.last_draw + ivl) then\n      if coalesce(array_length(d, 1), 0) >= 75 then perform b13_finish(g.id); return 'finished'; end if;\n      loop n := 1 + floor(random() * 75)::int; exit when not (n = any(d)); end loop;\n      update games set drawn = array_append(d, n), last_draw = now() where id = g.id;\n      return 'drawn';\n    end if;\n    return 'wait';\n  elsif g.status = 'claiming' then\n    if now() >= coalesce(g.claim_end, now()) then perform b13_finish(g.id); return 'finished'; end if;\n    return 'claiming';\n  elsif g.status = 'finished' then\n    if coalesce(s.auto_on, false) and now() >= coalesce(g.finished_at, now()) + interval '60 seconds' then\n      insert into games (status, drawn, draw_on) values ('waiting', '{}', false) returning id into v_new;\n      perform b13_apply_next(v_new);\n      update cards set game_id = v_new where game_id is null;\n      return 'new_game';\n    end if;\n    return 'finished_wait';\n  else\n    update cards set game_id = g.id where game_id is null;\n    if not coalesce(s.auto_on, false) then return 'manual'; end if;\n    if g.start_at is null then perform b13_apply_next(g.id); return 'scheduled'; end if;\n    if now() >= g.start_at then\n      select count(*) into v_reg from cards where game_id = g.id and registered;\n      if v_reg > 0 then\n        update games set status = 'playing', drawn = '{}', draw_on = true, last_draw = now(),\n          claim_end = null, finished_at = null, code = substr(md5(random()::text), 1, 8) where id = g.id;\n        return 'started';\n      else\n        update games set start_at = now() + make_interval(mins => greatest(coalesce(s.gap_min, 10), 1)) where id = g.id;\n        return 'no_players';\n      end if;\n    end if;\n    return 'waiting';\n  end if;\nend; $$;\n\n-- 5) OTP (SMS via AfroMessage)\ncreate extension if not exists pg_net with schema extensions;\ncreate table if not exists otps (phone text primary key, code_hash text, purpose text, expires_at timestamptz, attempts int default 0, last_sent timestamptz default now());\ncreate table if not exists sms_config (id int primary key default 1, token text, sender text, identifier text, debug boolean default false);\ninsert into sms_config (id) values (1) on conflict do nothing;\nalter table otps enable row level security;        -- no policy => the browser key cannot read these\nalter table sms_config enable row level security;\n\ncreate or replace function send_otp(p_phone text, p_purpose text) returns json\nlanguage plpgsql security definer set search_path = public, extensions as $$\ndeclare c sms_config%rowtype; v_code text; u users%rowtype; o otps%rowtype;\nbegin\n  select * into u from users where phone = p_phone;\n  if not found then return json_build_object('ok', false, 'error', 'NO_USER'); end if;\n  if p_purpose = 'signup' and coalesce(u.verified, true) then return json_build_object('ok', false, 'error', 'ALREADY'); end if;\n  select * into o from otps where phone = p_phone;\n  if found and o.last_sent > now() - interval '60 seconds' then\n    return json_build_object('ok', false, 'error', 'WAIT', 'wait', ceil(extract(epoch from (o.last_sent + interval '60 seconds' - now())))::int);\n  end if;\n  v_code := lpad((floor(random() * 1000000))::int::text, 6, '0');\n  insert into otps (phone, code_hash, purpose, expires_at, attempts, last_sent)\n    values (p_phone, md5(v_code || p_phone), p_purpose, now() + interval '5 minutes', 0, now())\n    on conflict (phone) do update set code_hash = excluded.code_hash, purpose = excluded.purpose,\n      expires_at = excluded.expires_at, attempts = 0, last_sent = now();\n  select * into c from sms_config where id = 1;\n  if coalesce(c.debug, false) then return json_build_object('ok', true, 'debug_code', v_code); end if;\n  if c.token is null then return json_build_object('ok', false, 'error', 'NO_SMS'); end if;\n  perform net.http_post(\n    url := 'https://api.afromessage.com/api/send',\n    headers := jsonb_build_object('Content-Type', 'application/json', 'Authorization', 'Bearer ' || c.token),\n    body := jsonb_strip_nulls(jsonb_build_object('from', c.identifier, 'sender', c.sender, 'to', p_phone,\n             'message', 'B13 Bingo: ' || v_code || ' is your verification code. Valid for 5 minutes.')));\n  return json_build_object('ok', true);\nend; $$;\n\ncreate or replace function verify_otp(p_phone text, p_code text, p_purpose text) returns json\nlanguage plpgsql security definer set search_path = public as $$\ndeclare o otps%rowtype;\nbegin\n  select * into o from otps where phone = p_phone and purpose = p_purpose for update;\n  if not found or o.expires_at < now() then return json_build_object('ok', false, 'error', 'EXPIRED'); end if;\n  if o.attempts >= 5 then return json_build_object('ok', false, 'error', 'LOCKED'); end if;\n  if o.code_hash <> md5(p_code || p_phone) then\n    update otps set attempts = attempts + 1 where phone = p_phone;\n    return json_build_object('ok', false, 'error', 'BAD_CODE');\n  end if;\n  update users set verified = true where phone = p_phone;\n  delete from otps where phone = p_phone;\n  return json_build_object('ok', true);\nend; $$;\n\ncreate or replace function reset_password(p_phone text, p_code text, p_salt text, p_hash text) returns json\nlanguage plpgsql security definer set search_path = public as $$\ndeclare o otps%rowtype;\nbegin\n  select * into o from otps where phone = p_phone and purpose = 'reset' for update;\n  if not found or o.expires_at < now() then return json_build_object('ok', false, 'error', 'EXPIRED'); end if;\n  if o.attempts >= 5 then return json_build_object('ok', false, 'error', 'LOCKED'); end if;\n  if o.code_hash <> md5(p_code || p_phone) then\n    update otps set attempts = attempts + 1 where phone = p_phone;\n    return json_build_object('ok', false, 'error', 'BAD_CODE');\n  end if;\n  update users set salt = p_salt, hash = p_hash, verified = true where phone = p_phone;\n  delete from otps where phone = p_phone;\n  return json_build_object('ok', true);\nend; $$;\n\ngrant execute on function auto_tick() to anon, authenticated;\ngrant execute on function b13_finish(bigint) to anon, authenticated;\ngrant execute on function b13_apply_next(bigint) to anon, authenticated;\ngrant execute on function send_otp(text, text) to anon, authenticated;\ngrant execute on function verify_otp(text, text, text) to anon, authenticated;\ngrant execute on function reset_password(text, text, text, text) to anon, authenticated;\n\n-- 6) SMS settings (fill in YOUR AfroMessage values, then run)\n-- update sms_config set token = 'YOUR_API_TOKEN', sender = 'YOUR_SENDER_NAME', identifier = 'YOUR_IDENTIFIER_ID' where id = 1;\n-- Testing without SMS (shows the code on screen — turn OFF for real use):\n-- update sms_config set debug = true where id = 1;\n\n-- 7) optional: run the engine 24/7 even when nobody has the app open\n-- create extension if not exists pg_cron;\n-- select cron.schedule('b13_auto_tick', '5 seconds', 'select auto_tick()');\n\n-- 7b) cards per player: maximum 6 (server-side)\nupdate settings set max_cards = 6 where max_cards is null or max_cards > 6;\ncreate or replace function b13_clamp_max() returns trigger language plpgsql as $$ begin if new.max_cards is null or new.max_cards > 6 then new.max_cards := 6; end if; return new; end; $$;\ndrop trigger if exists b13_clamp_max_t on settings;\ncreate trigger b13_clamp_max_t before insert or update on settings for each row execute function b13_clamp_max();\n\n-- 8) IMPORTANT: refresh the API cache so the new columns/functions are visible\nnotify pgrst, 'reload schema';\n";
 let dbMiss = [], admTab = 'game';
 function renderDbWarn() {
   const el = $('dbWarn'); if (!el) return;
@@ -3025,22 +3045,53 @@ function authPanel(p) {
 const otpIn = () => [...document.querySelectorAll('#otpBox input')];
 const OTP_ERR = { NO_USER:'ይህ ስልክ አልተመዘገበም', NO_SMS:'የኤስኤምኤስ አገልግሎት አልተዋቀረም', ALREADY:'ተረጋግጧል' };
 async function startOtp(phone, purpose, payload) {
-  const { data, error } = await sb.rpc('send_otp', { p_phone: phone, p_purpose: purpose });
-  if (error) {
-    if (isSchemaErr(error) && purpose === 'signup') { return toast('OTP ገና አልተዋቀረም — በስልክ እና በይለፍ ቃል ይመዝገቡ', 'e'); }
-    return toast(dbMsg(error), 'e');
+  // Prefer international form for SMS gateways; fall back to local
+  const phLocal = normPhone(phone);
+  const phIntl = smsPhone(phLocal);
+  let data = null, error = null;
+  ({ data, error } = await sb.rpc('send_otp', { p_phone: phLocal, p_purpose: purpose }));
+  // Retry with 251… if first attempt fails with schema/arg issues
+  if (error && /p_phone|Could not find|PGRST202|42883/i.test((error.message || '') + (error.code || ''))) {
+    ({ data, error } = await sb.rpc('send_otp', { p_phone: phIntl, p_purpose: purpose }));
   }
-  if (!data?.ok && data?.error !== 'WAIT') return toast(OTP_ERR[data?.error] || 'ስህተት ተፈጥሯል', 'e');
-  otpCtx = { phone, purpose, payload };
-  if (data.ok) toast(data.debug_code ? '🔧 የሙከራ ኮድ: ' + data.debug_code : '✓ ኮዱ ተልኳል', data.debug_code ? 'i' : '');
-  else toast(data.wait + ' ሰከንድ ይጠብቁ', 'i');
-  showOtp(120);
+  if (error) {
+    const msg = dbMsg(error);
+    if (isSchemaErr(error)) {
+      // Schema not ready — for signup let user in after app_signup already succeeded
+      if (purpose === 'signup') {
+        toast('OTP አልተላከም (SMS አልተዋቀረም) — በቀጥታ ይግቡ', 'i');
+        // Try login with just-created account if payload has hash path is only for reset
+        return;
+      }
+      return toast('OTP/SMS ገና አልተዋቀረም — Supabase ላይ send_otp + sms_config ያረጋግጡ', 'e');
+    }
+    return toast(msg || 'ኮድ መላክ አልተሳካም', 'e');
+  }
+  if (!data?.ok && data?.error !== 'WAIT') {
+    return toast(OTP_ERR[data?.error] || (data?.error || 'ስህተት ተፈጥሯል'), 'e');
+  }
+  otpCtx = { phone: phLocal, purpose, payload };
+  if (data.ok) {
+    if (data.debug_code) toast('🔧 የሙከራ ኮድ: ' + data.debug_code + ' (debug ሞድ)', 'i');
+    else toast('✓ ኮዱ ወደ ' + displayPhone(phLocal) + ' ተልኳል');
+  } else {
+    toast((data.wait || 60) + ' ሰከንድ ይጠብቁ', 'i');
+  }
+  showOtp(120, data?.debug_code || '');
 }
-function showOtp(sec) {
+function showOtp(sec, debugCode) {
   authPanel('o');
   $('otpSub').textContent = 'ኮዱ ወደ ' + displayPhone(otpCtx.phone) + ' ተልኳል';
-  otpIn().forEach(i => i.value = '');
-  $('otpErr').classList.add('hidden'); chkOtp(); otpIn()[0].focus();
+  const boxes = otpIn();
+  boxes.forEach(i => i.value = '');
+  // Auto-fill debug code (4 or 6 digits) so user can just press Verify
+  const dc = String(debugCode || '').replace(/\D/g, '');
+  if (dc) {
+    // Prefer left-align into the boxes; if 4-digit fill first 4
+    for (let i = 0; i < boxes.length; i++) boxes[i].value = dc[i] || '';
+  }
+  $('otpErr').classList.add('hidden'); chkOtp();
+  (boxes.find(b => !b.value) || boxes[0]).focus();
   otpLeft = sec; clearInterval(otpTick); otpTick = setInterval(tickOtp, 1000); tickOtp();
 }
 function tickOtp() {
@@ -3050,19 +3101,93 @@ function tickOtp() {
     b.disabled = true; b.style.opacity = .4; otpLeft--;
   } else { t.textContent = ''; b.disabled = false; b.style.opacity = 1; clearInterval(otpTick); }
 }
-function chkOtp() { const ok = otpIn().every(i => i.value); const b = $('btnOtp'); b.disabled = !ok; b.style.opacity = ok ? 1 : .5; }
+function chkOtp() {
+  const code = otpIn().map(i => i.value).join('').replace(/\D/g, '');
+  const ok = code.length >= 4; // accept 4–6 digit codes (debug often 4)
+  const b = $('btnOtp'); if (b) { b.disabled = !ok; b.style.opacity = ok ? 1 : .5; }
+}
 function resendOtp() { if (otpCtx) startOtp(otpCtx.phone, otpCtx.purpose, otpCtx.payload); }
+
+// After OTP success, server often returns only {ok:true} without token — login with stored password
+async function loginAfterOtp(phone, password) {
+  if (!password) {
+    toast('✓ ተረጋግጧል — እባክዎ ይግቡ', 'i');
+    authPanel('l');
+    $('lPhone').value = phone.startsWith('0') ? phone.slice(1) : phone;
+    return;
+  }
+  // Reuse normal login RPCs
+  try {
+    const { data: salt, error: e0 } = await sb.rpc('get_salt', { p_phone: phone });
+    if (e0 || !salt) {
+      toast('✓ ተረጋግጧል — እባክዎ ይግቡ', 'i');
+      authPanel('l');
+      $('lPhone').value = phone.startsWith('0') ? phone.slice(1) : phone;
+      return;
+    }
+    const hash = await hashPw(password, salt);
+    let data = null, error = null;
+    ({ data, error } = await sb.rpc('app_login', { p_phone: phone, p_hash: hash }));
+    if (error || !data?.ok) {
+      // try alternate names
+      ({ data, error } = await sb.rpc('login', { p_phone: phone, p_hash: hash }));
+    }
+    if (data?.ok && data.token) {
+      toast('✓ ተረጋግጧል');
+      loginWith(data);
+      return;
+    }
+  } catch (e) {}
+  toast('✓ ተረጋግጧል — እባክዎ ይግቡ', 'i');
+  authPanel('l');
+  $('lPhone').value = phone.startsWith('0') ? phone.slice(1) : phone;
+  if (password) $('lPass').value = password;
+}
+
 async function submitOtp() {
-  const code = otpIn().map(i => i.value).join(''), c = otpCtx;
-  if (code.length < 6 || !c) return;
-  const res = c.purpose === 'signup'
-    ? await sb.rpc('verify_otp_s', { p_phone: c.phone, p_code: code })
-    : await sb.rpc('reset_password_s', { p_phone: c.phone, p_code: code, p_salt: c.payload.salt, p_hash: c.payload.hash });
-  if (res.error) return err('otpErr', dbMsg(res.error));
-  const r = res.data;
-  if (!r?.ok) return err('otpErr', r?.error === 'EXPIRED' ? 'ኮዱ ጊዜው አልፎበታል — እንደገና ይላኩ' : r?.error === 'LOCKED' ? 'ብዙ ጊዜ ሞክረዋል — አዲስ ኮድ ይጠይቁ' : 'ኮዱ የተሳሳተ ነው');
-  toast('✓ ተረጋግጧል');
-  loginWith(r);
+  const raw = otpIn().map(i => i.value).join('').replace(/\D/g, '');
+  const c = otpCtx;
+  if (!c || raw.length < 4) return;
+  // Try as-entered and zero-padded to 6 (server may store either)
+  const candidates = [raw];
+  if (raw.length < 6) candidates.push(raw.padStart(6, '0'));
+  if (raw.length === 4) candidates.push(raw); // keep 4
+
+  let r = null, lastErr = null;
+  for (const code of candidates) {
+    let res;
+    if (c.purpose === 'signup') {
+      res = await sb.rpc('verify_otp', { p_phone: c.phone, p_code: code, p_purpose: 'signup' });
+      if (res.error && /Could not find|PGRST202|42883/i.test((res.error.message || '') + (res.error.code || ''))) {
+        res = await sb.rpc('verify_otp_s', { p_phone: c.phone, p_code: code });
+      }
+      if (res.error && /Could not find|PGRST202|42883/i.test((res.error.message || '') + (res.error.code || ''))) {
+        res = await sb.rpc('verify_otp', { p_phone: c.phone, p_code: code });
+      }
+    } else {
+      res = await sb.rpc('reset_password', { p_phone: c.phone, p_code: code, p_salt: c.payload.salt, p_hash: c.payload.hash });
+      if (res.error && /Could not find|PGRST202|42883/i.test((res.error.message || '') + (res.error.code || ''))) {
+        res = await sb.rpc('reset_password_s', { p_phone: c.phone, p_code: code, p_salt: c.payload.salt, p_hash: c.payload.hash });
+      }
+    }
+    if (res.error) { lastErr = res.error; continue; }
+    if (res.data?.ok) { r = res.data; break; }
+    if (res.data?.error === 'BAD_CODE') { lastErr = res.data; continue; }
+    if (res.data && !res.data.ok) {
+      return err('otpErr', res.data.error === 'EXPIRED' ? 'ኮዱ ጊዜው አልፎበታል — እንደገና ይላኩ' : res.data.error === 'LOCKED' ? 'ብዙ ጊዜ ሞክረዋል — አዲስ ኮድ ይጠይቁ' : 'ኮዱ የተሳሳተ ነው');
+    }
+  }
+  if (!r?.ok) {
+    if (lastErr && lastErr.message) return err('otpErr', dbMsg(lastErr));
+    return err('otpErr', 'ኮዱ የተሳሳተ ነው');
+  }
+  // Prefer token from server if present
+  if (r.token && r.user) {
+    toast('✓ ተረጋግጧል');
+    return loginWith(r);
+  }
+  // Otherwise login with password stored in otp context
+  await loginAfterOtp(c.phone, c.payload && c.payload.password);
 }
 async function forgotSubmit() {
   $('fErr').classList.add('hidden');
@@ -3073,7 +3198,7 @@ async function forgotSubmit() {
   if (a.length < 4) return err('fErr', 'የይለፍ ቃል ቢያንስ 4 ቁምፊ መሆን አለበት');
   if (a !== b) return err('fErr', 'የይለፍ ቃሉ አይመሳሰልም');
   const salt = newSalt(), hash = await hashPw(a, salt);
-  await startOtp(phone, 'reset', { salt, hash });
+  await startOtp(phone, 'reset', { salt, hash, password: a });
 }
 
 // ---- Ref number extraction (paste a whole SMS -> only the Ref stays) ----
@@ -3160,8 +3285,9 @@ async function signup() {
   if (error) return err('sErr', isSchemaErr(error) ? 'security_setup.sql ገና አልተሰራም' : 'ስህተት ተፈጥሯል');
   if (!r.ok) return err('sErr', r.error === 'EXISTS' ? 'ስልኩ ቀድሞ ተመዝግቧል' : r.error === 'APP_OFF' ? 'አፑ ለጊዜው ዝግ ነው' : 'ስህተት ተፈጥሯል');
   $('lPhone').value = phone.startsWith('0') ? phone.slice(1) : phone;
-  // Require 6-digit OTP verification before login
-  await startOtp(phone, 'signup', { salt, hash });
+  // OTP verification — keep password so we can auto-login after verify
+  const pw = $('sPass') ? $('sPass').value : (a || '');
+  await startOtp(phone, 'signup', { salt, hash, password: pw });
 }
 
 async function setupOwner() {
@@ -3501,6 +3627,10 @@ function ensureBalForReg(cards) {
 
 async function buy(n) {
   if (_buying) return;
+  try {
+    const mine = (gameCards || []).filter(c => String(c.user_id) === String(cur?.id)).length;
+    if (!isGA() && mine + Number(n || 1) > MAX_CARDS_LIMIT) return toast('ከፍተኛው ' + MAX_CARDS_LIMIT + ' ካርድ', 'e');
+  } catch (e) {}
   _buying = true;
   showBusy(true, 'ካርድ በመግዛት...');
   try {
@@ -3526,7 +3656,7 @@ async function buy(n) {
     }
     if (error) {
       const m = error.message || '';
-      if (/MAX/i.test(m)) return toast('ከፍተኛው ' + (settings?.max_cards || '') + ' ካርድ', 'e');
+      if (/MAX/i.test(m)) return toast('ከፍተኛው ' + MAX_CARDS_LIMIT + ' ካርድ', 'e');
       if (/INSUFFICIENT/i.test(m)) return toast('በቂ ቀሪ ሂሳብ የለዎትም — Register ለማድረግ ዲፖዚት ያድርጉ', 'e');
       if (/NOT_LOGGED_IN|token/i.test(m)) return toast('እባክዎ እንደገና ይግቡ', 'e');
       if (/BLOCKED/i.test(m)) return toast('መለያዎ ታግዷል', 'e');
@@ -3540,7 +3670,7 @@ async function buy(n) {
     if (returned.length) {
       const byId = new Map(myCards.map(c => [c.id, c]));
       returned.forEach(c => byId.set(c.id, c));
-      myCards = [...byId.values()].sort((a, b) => b.id - a.id);
+      myCards = [...byId.values()].sort((a, b) => (Number(b.registered)-Number(a.registered)) || (b.id - a.id));
     }
     await refreshMyCards();
     if (!myCards.length && returned.length) {
@@ -3937,6 +4067,25 @@ async function viewCard(id) {
   openM('mCard');
 }
 
+
+// Re-use a finished card's numbers for the next game (reset marks / attach to next)
+async function reuseCard(id) {
+  const c = myCards.find(x => x.id === id);
+  if (!c) return;
+  if (c.locked && game && ['playing','claiming'].includes(game.status) && c.game_id === game.id)
+    return toast('ጨዋታ በመካሄድ ላይ — ማደስ አይቻልም', 'e');
+  if (!confirm('ካርድ #' + c.id + ' ለቀጣይ ጨዋታ እንደገና ይገለገል? (ምልክቶች ይጠፋሉ)')) return;
+  const patch = { game_id: null, registered: false, marked: [], won: false, locked: false };
+  let { error } = await sb.from('cards').update(patch).eq('id', c.id).eq('user_id', cur.id);
+  if (error) {
+    // try RPC if exists
+    const r = await sb.rpc('reuse_card', { p_card: String(c.id), p_user: cur?.id || null });
+    if (r.error) return toast('ማደስ አልተሳካም', 'e');
+  }
+  await refreshMyCards(); lastCardsSig = ''; render();
+  toast('✓ ካርድ #' + c.id + ' ለቀጣይ ተዘጋጅቷል — Register ያድርጉ');
+}
+
 // ---- delete card (refund if registered) ----
 function askDel(id) { delId = id; openM('mDel'); }
 async function doDel() {
@@ -3978,9 +4127,10 @@ async function doDel() {
 }
 
 async function deleteAllMyCards() {
-  const list = myCards.filter(c => !c.locked && !c.won);
-  if (!list.length) return toast('የሚጠፋ ካርቴላ የለም', 'i');
-  if (!confirm(list.length + ' ካርቴላ መጥፋት እርግጠኛ ነዎት?')) return;
+  // Only unregistered cards — registered stay (money already deducted / stay in play)
+  const list = myCards.filter(c => !c.registered && !c.locked && !c.won);
+  if (!list.length) return toast('ያልተመዘገበ የሚጠፋ ካርቴላ የለም (የተመዘገቡ አይጠፉም)', 'i');
+  if (!confirm(list.length + ' ያልተመዘገቡ ካርቴላ መጥፋት እርግጠኛ ነዎት?\n(የተመዘገቡ ካርቴላ አይጠፉም)')) return;
   const ids = list.map(c => c.id);
   let data = null, error = null;
   ({ data, error } = await sb.rpc('delete_cards', { p_ids: ids, p_user: cur?.id || null }));
@@ -4026,6 +4176,8 @@ async function startGame() {
   if (game.status === 'finished') return newGame(true);
   if (['playing','claiming'].includes(game.status)) return toast('ጨዋታ በመካሄድ ላይ', 'e');
   const ivl = Math.max(2, Number(game?.interval_sec || settings?.interval_sec || 10));
+  // cards bought/registered before the start belong to this game
+  await sb.from('cards').update({ game_id: game.id }).is('game_id', null);
   await sb.from('games').update({
     status: 'playing', drawn: [], draw_on: true, claim_end: null, finished_at: null,
     last_draw: new Date().toISOString(), type: game.type || settings?.game_type || 'line',
@@ -4056,33 +4208,91 @@ async function resetGame() {
   toast('ጨዋታ ዳግም ተጀምሯል', 'i');
 }
 
+const MAX_CARDS_LIMIT = 6;
 let queue = [], qEdit = -1, lastQSig = '';
-const QDEF = { type:'line', price:30, pct:70, int:10, wait:10 };
+const QDEF = { type:'line', price:30, pct:70, int:10, wait:10, free_prize:0 };
+let _aqT = null;
+function autoArm() {
+  autoUI = queue.length > 0; cfgDirty = true; syncAutoBtn(); renderQueue(true);
+  clearTimeout(_aqT); _aqT = setTimeout(() => { applyCfg(); }, 500);
+}
 function toggleAutoUI() { autoUI = !autoUI; cfgDirty = true; syncAutoBtn(); renderQueue(true); }
 function stp(id, d, mn, mx) { const e = $(id); e.value = Math.min(mx, Math.max(mn, (+e.value || 0) + d)); if (!id.startsWith('q')) cfgDirty = true; }
-function qTypeGridHtml(sel, fn) {
-  return TYPE_ORDER.map(k => `<button type="button" onclick="${fn}('${k}')" class="rounded-xl border p-1 text-center ${k === sel ? 'border-indigo-400 bg-indigo-500/20' : 'border-white/10'}">${patMini(PATS[k].ok[0], k === sel ? '#818cf8' : null)}<div class="text-[9px] font-bold mt-1 leading-tight">${GT[k]}</div></button>`).join('');
+function shortTypeLabel(k) {
+  // Compact labels for the grid (like screenshot: Four Corners, X shape…)
+  const map = {
+    line:'1 Line', two:'2 Lines', four_free:'4 Free lines', full:'Full House',
+    corners:'Four Corners', x:'X shape', z:'Z shape', t:'T shape', l:'L shape', u:'U shape',
+    h:'H shape', plus:'Plus (+)', frame:'Frame', diamond:'Diamond', n:'N shape', c:'C shape',
+    inner:'Inner square', y:'Y shape', a:'A shape', e:'E shape', f:'F shape', i:'I shape',
+    j:'J shape', k:'K shape', m:'M shape', p:'P shape', s:'S shape', v:'V shape', w:'W shape',
+    heart:'Heart', hourglass:'Hourglass', stamp:'Stamp', stamps4:'4 Stamps', star:'Star',
+    checker:'Checker', b:'B shape', d:'D shape', g:'G shape', r:'R shape', q:'Q shape',
+    bowtie:'Bow tie', kite:'Kite', arrowup:'Arrow up', arrowright:'Arrow right',
+    house:'House', tree:'Tree', umbrella:'Umbrella', hash:'Hash #', window:'Window',
+    smallx:'Small X', cornersc:'Corners+C', stairs:'Stairs', bolt:'Bolt'
+  };
+  return map[k] || GT[k] || k;
 }
-function pickQType(t) { $('qType').value = t; $('qTypeDesc').textContent = GT_DESC[t] || ''; $('qTypeGrid').innerHTML = qTypeGridHtml(t, 'pickQType'); }
+function qTypeGridHtml(sel, fn) {
+  return TYPE_ORDER.map(k => {
+    const on = k === sel;
+    return `<button type="button" onclick="${fn}('${k}')" class="rounded-2xl border p-2 text-center transition ${on ? 'border-indigo-400 bg-indigo-500/15 shadow-sm' : 'border-white/10 bg-white/5'}">
+      <div class="mx-auto" style="width:52px">${patMini(PATS[k] && PATS[k].ok ? PATS[k].ok[0] : [], on ? '#6366f1' : '#94a3b8')}</div>
+      <div class="text-[10px] font-bold mt-1.5 leading-tight ${on ? 'text-indigo-300' : ''}">${shortTypeLabel(k)}</div>
+    </button>`;
+  }).join('');
+}
+function syncFreeUi() {
+  const price = +($('qPrice')?.value || 0);
+  const fp = $('freePrizeWrap'), pc = $('pctWrap');
+  if (fp) fp.style.display = price === 0 ? '' : 'none';
+  if (pc) pc.style.display = price === 0 ? 'none' : '';
+}
+function pickQType(t) {
+  $('qType').value = t;
+  $('qTypeDesc').textContent = GT_DESC[t] || ('ቢንጎ ሲሆን: ' + (GT[t] || t) + ' — FREE ቦታ እንደ ተሞላ ይቆጠራል።');
+  $('qTypeGrid').innerHTML = qTypeGridHtml(t, 'pickQType');
+  syncFreeUi();
+}
 function editQ(i) {
   qEdit = i;
   const it = i >= 0 ? queue[i] : { ...(queue[queue.length - 1] || QDEF) };
   $('qPrice').value = it.price; $('qPct').value = it.pct; $('qInt').value = it.int; $('qWait').value = it.wait;
+  const fp = $('qFreePrize'); if (fp) fp.value = it.free_prize || 0;
   pickQType(it.type);
+  syncFreeUi();
   $('qDelBtn').classList.toggle('hidden', i < 0);
   openM('mQ');
 }
 function saveQ() {
-  const it = { type: $('qType').value, price: +$('qPrice').value, pct: +$('qPct').value, int: +$('qInt').value, wait: +$('qWait').value };
-  if (!(it.price >= 1) || !(it.pct >= 1 && it.pct <= 100) || !(it.int >= 2 && it.int <= 60) || !(it.wait >= 1 && it.wait <= 240)) return toast('እሴቶቹን ያረጋግጡ', 'e');
+  const freePrize = +($('qFreePrize')?.value || 0);
+  const it = { type: $('qType').value, price: +$('qPrice').value, pct: +$('qPct').value, int: +$('qInt').value, wait: +$('qWait').value, free_prize: freePrize };
+  if (!(it.price >= 0) || !(it.pct >= 1 && it.pct <= 100) || !(it.int >= 2 && it.int <= 60) || !(it.wait >= 1 && it.wait <= 240)) return toast('እሴቶቹን ያረጋግጡ', 'e');
+  if (it.price === 0 && !(freePrize >= 1)) return toast('ነፃ ጨዋታ ላይ ሽልማት (ብር) ያስገቡ', 'e');
   if (qEdit >= 0) queue[qEdit] = it; else queue.push(it);
-  cfgDirty = true; closeM('mQ'); renderQueue(true);
+  closeM('mQ'); autoArm();
 }
-function mvQ(i, d) { const j = i + d; if (j < 0 || j >= queue.length) return; [queue[i], queue[j]] = [queue[j], queue[i]]; cfgDirty = true; renderQueue(true); }
-function dupQ(i) { queue.splice(i + 1, 0, { ...queue[i] }); cfgDirty = true; renderQueue(true); }
-function delQ(i) { if (i < 0) return; queue.splice(i, 1); cfgDirty = true; renderQueue(true); }
-function addQ10() { const b = queue[queue.length - 1] || QDEF; for (let k = 0; k < 10; k++) queue.push({ ...b }); cfgDirty = true; renderQueue(true); }
-function clearQ() { if (!queue.length || !confirm('ሁሉንም ጨዋታዎች ከዝርዝሩ ላጥፋ?')) return; queue = []; cfgDirty = true; renderQueue(true); }
+function mvQ(i, d) { const j = i + d; if (j < 0 || j >= queue.length) return; [queue[i], queue[j]] = [queue[j], queue[i]]; autoArm(); }
+function dupQ(i) { queue.splice(i + 1, 0, { ...queue[i] }); autoArm(); }
+function delQ(i) { if (i < 0) return; queue.splice(i, 1); autoArm(); }
+function addQ10() { const b = queue[queue.length - 1] || QDEF; for (let k = 0; k < 10; k++) queue.push({ ...b }); autoArm(); }
+function addFreeGame() {
+  const b = queue[queue.length - 1] || QDEF;
+  const it = { ...b, price: 0, free_prize: Math.max(10, Number(b.free_prize) || 50), pct: 100 };
+  qEdit = -1;
+  // open editor prefilled as free
+  $('qPrice').value = 0;
+  $('qPct').value = it.pct;
+  $('qInt').value = it.int;
+  $('qWait').value = it.wait;
+  const fp = $('qFreePrize'); if (fp) fp.value = it.free_prize;
+  pickQType(it.type || 'line');
+  syncFreeUi();
+  $('qDelBtn').classList.add('hidden');
+  openM('mQ');
+}
+function clearQ() { if (!queue.length || !confirm('ሁሉንም ጨዋታዎች ከዝርዝሩ ላጥፋ?')) return; queue = []; autoArm(); }
 function renderQueue(force) {
   const el = $('qList'); if (!el) return;
   const n = queue.length, idx = Number(settings?.queue_idx || 0), auto = !!settings?.auto_on;
@@ -4114,8 +4324,8 @@ function renderQueue(force) {
           ${badge}
         </div>
         <div class="q-meta">
-          <span class="q-chip">💰 ${it.price} ብር</span>
-          <span class="q-chip">🏆 ${it.pct}%</span>
+          <span class="q-chip">${it.price === 0 ? '🎁 ነፃ · ሽልማት ' + (it.free_prize || 0) + ' ብር' : '💰 ' + it.price + ' ብር'}</span>
+          ${it.price === 0 ? '' : '<span class="q-chip">🏆 ' + it.pct + '%</span>'}
           <span class="q-chip">⏱ ${it.int}ሠ</span>
           <span class="q-chip">⏳ ${it.wait}ደ</span>
         </div>
@@ -4148,7 +4358,7 @@ function updAdminLive(reg, pool, prize) {
   const st = (label, value) => `<div class="stat"><b>${value}</b><span>${label}</span></div>`;
   el.innerHTML =
     st('ካርቴላ', reg.length) +
-    st('ተጫዋቾች', new Set(reg.map(c => c.user_id)).size) +
+    st('ጨዋታዎች', (queue.length || (settings?.game_queue || []).length || (game ? 1 : 0))) +
     st('ጠቅላላ', fmt(pool)) +
     st('ሽልማት', fmt(prize)) +
     st('ትርፍ', fmt(pool - prize)) +
@@ -4165,13 +4375,13 @@ function updAdminLive(reg, pool, prize) {
 async function applyCfg() {
   if (!isGA()) return;
   const max = +$('cfgMax').value;
-  if (!(max >= 1)) return toast('እሴቶቹን ያረጋግጡ', 'e');
+  if (!(max >= 1 && max <= MAX_CARDS_LIMIT)) return toast('ከፍተኛ ካርድ ከ1 እስከ ' + MAX_CARDS_LIMIT + ' ብቻ ነው', 'e');
   if (autoUI && !queue.length) return toast('ዝርዝሩ ባዶ ነው — ቢያንስ አንድ ጨዋታ ይጨምሩ', 'e');
   const f = queue[0];
   const changed = JSON.stringify(queue) !== JSON.stringify(settings?.game_queue || []) || (autoUI && !settings?.auto_on);
   const upd = { max_cards: max, auto_on: autoUI, game_queue: queue };
   if (changed) upd.queue_idx = 0;
-  if (f) Object.assign(upd, { game_type: f.type, price: f.price, winner_pct: f.pct, interval_sec: f.int, gap_min: f.wait });
+  if (f) Object.assign(upd, { game_type: f.type, price: f.price, winner_pct: f.pct, interval_sec: f.int, gap_min: f.wait, free_prize: f.free_prize || 0 });
   let { error } = await sb.from('settings').update(upd).eq('id', 1);
   let partial = false;
   if (error && isSchemaErr(error)) {
@@ -4266,11 +4476,50 @@ async function deposit() {
   } finally { _depBusy = false; }
 }
 
+// ---- password confirmation for withdraw / transfer ----
+function askPassword(title) {
+  return new Promise(resolve => {
+    const old = document.getElementById('pwAskBox'); if (old) old.remove();
+    const box = document.createElement('div');
+    box.id = 'pwAskBox';
+    box.style.cssText = 'position:fixed;inset:0;z-index:99999;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;padding:20px';
+    box.innerHTML = `<div style="background:#fff;color:#0f172a;border-radius:20px;padding:20px;width:100%;max-width:340px;box-shadow:0 20px 60px rgba(0,0,0,.4)">
+      <div style="font-weight:800;font-size:16px;margin-bottom:4px">🔒 ${title || 'የይለፍ ቃል ያስገቡ'}</div>
+      <div style="font-size:12px;color:#64748b;margin-bottom:12px">ለደህንነት ሲባል የይለፍ ቃልዎን ያስገቡ</div>
+      <input id="pwAskInp" type="password" autocomplete="current-password" placeholder="የይለፍ ቃል" style="width:100%;padding:12px;border:1.5px solid #cbd5e1;border-radius:12px;font-size:16px;outline:none">
+      <div id="pwAskErr" style="color:#dc2626;font-size:12px;min-height:16px;margin-top:6px"></div>
+      <div style="display:flex;gap:8px;margin-top:8px">
+        <button id="pwAskNo" type="button" style="flex:1;padding:12px;border-radius:12px;background:#e2e8f0;font-weight:700">ተው</button>
+        <button id="pwAskOk" type="button" style="flex:1;padding:12px;border-radius:12px;background:#1d5bdc;color:#fff;font-weight:700">አረጋግጥ</button>
+      </div></div>`;
+    document.body.appendChild(box);
+    const inp = box.querySelector('#pwAskInp'), err = box.querySelector('#pwAskErr'), ok = box.querySelector('#pwAskOk');
+    const done = v => { box.remove(); resolve(v); };
+    box.querySelector('#pwAskNo').onclick = () => done(false);
+    const go = async () => {
+      const pw = inp.value; if (!pw) { err.textContent = 'የይለፍ ቃል ያስገቡ'; return; }
+      ok.disabled = true; err.textContent = '';
+      try {
+        const { data: salt } = await sb.rpc('get_salt', { p_phone: cur.phone });
+        const hash = await hashPw(pw, salt);
+        const { data: r, error } = await sb.rpc('app_login', { p_phone: cur.phone, p_hash: hash });
+        if (!error && r && r.ok) return done(true);
+        err.textContent = (r && r.error === 'LOCKED') ? 'ብዙ ሙከራ — ቆይተው ይሞክሩ' : 'የይለፍ ቃል ትክክል አይደለም';
+      } catch (e) { err.textContent = 'ግንኙነት ተቋርጧል — እንደገና ይሞክሩ'; }
+      ok.disabled = false; inp.select();
+    };
+    ok.onclick = go;
+    inp.addEventListener('keydown', e => { if (e.key === 'Enter') go(); });
+    setTimeout(() => inp.focus(), 50);
+  });
+}
+
 async function withdraw() {
   const amt = parseFloat($('wAmt').value), acc = $('wAcc').value.trim();
   if (!(amt >= 100)) return toast('ቢያንስ 100 ብር', 'e');
   if (amt > cur.balance) return toast('በቂ ቀሪ ሂሳብ የለዎትም', 'e');
   if (!acc) return toast('ስልክ ያስገቡ', 'e');
+  if (!(await askPassword('ገንዘብ ለማውጣት የይለፍ ቃል'))) return;
   let { data, error } = await sb.rpc('withdraw_req', { p_amount: amt, p_method: $('wMethod').value, p_ref: acc, p_user: cur?.id || null });
   if (error && /p_user|PGRST202|42883/i.test((error.message || '') + ' ' + (error.code || ''))) ({ data, error } = await sb.rpc('withdraw_req', { p_amount: amt, p_method: $('wMethod').value, p_ref: acc }));
   if (error) {
@@ -4293,6 +4542,7 @@ async function transfer() {
   const { data: rs } = await sb.rpc('lookup_user', { p_phone: phone });
   if (!rs || !rs.name) return toast('ይህ ስልክ ያለው ተጠቃሚ አልተገኘም', 'e');
   if (!confirm(fmt(amt) + ' ብር ወደ ' + rs.name + ' (' + rs.phone + ') ይላክ?')) return;
+  if (!(await askPassword('ገንዘብ ለመላክ የይለፍ ቃል'))) return;
   const { error } = await sb.rpc('app_transfer', { p_amount: amt, p_to_phone: phone, p_user: cur?.id || null });
   if (error) {
     const m = error.message || '';
@@ -4410,16 +4660,65 @@ async function removeAdmin(id) {
 function oTab(t) {
   oTabNow = t;
   document.querySelectorAll('.otab[data-t]').forEach(b => b.classList.toggle('on', b.dataset.t === t));
-  ['fin','bingo','admstat','hist','keno','avatar','staff','users','safe'].forEach(x => {
+  ['fin','bingo','admstat','hist','keno','avatar','staff','users','notice','safe'].forEach(x => {
     const el = $('ot-' + x); if (el) el.classList.toggle('hidden', x !== t);
   });
+  if (t === 'notice') { const e = $('noticeTxt'); if (e && document.activeElement !== e) e.value = settings?.notice || ''; return; }
   renderOwner(true);
 }
+
+// ---- owner announcement (shown to all users in the game-info box) ----
+const DEFAULT_INFO = 'መረጃ፦ ቴሌብር (0987215758) እና ንግድ ባንክ (1000066910133) ደረሰኝ በሙሉ ወደ አፕሊኬሽኑ በማስገባት ገቢ (deposit) ማድረግ ትችላላችሁ።';
+function toggleDesc() {
+  const el = $('giDesc'), b = $('giDescTgl'); if (!el || !b) return;
+  const open = el.dataset.open === '1';
+  el.dataset.open = open ? '0' : '1';
+  el.style.cssText = open ? 'display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden' : '';
+  b.textContent = open ? '⌄ ተጨማሪ' : '⌃ ያነሰ';
+}
+function syncDescClamp() {
+  const el = $('giDesc'), b = $('giDescTgl'); if (!el || !b) return;
+  const long = (el.textContent || '').length > 120;
+  b.classList.toggle('hidden', !long);
+  if (!long) { el.style.cssText = ''; el.dataset.open = '1'; }
+  else if (el.dataset.open === undefined) { el.dataset.open = '1'; toggleDesc(); }
+}
+// prize of a free (bonus) game: game row -> queue item of the current game -> settings
+function freePrizeNow() {
+  const pos = v => (Number(v) > 0 ? Number(v) : 0);
+  let v = pos(game?.free_prize);
+  if (v) return v;
+  const q = settings?.game_queue || [], n = q.length;
+  if (n) {
+    const cur_ = ((Number(settings?.queue_idx || 0) - 1) % n + n) % n;
+    if (Number(q[cur_]?.price) === 0 && pos(q[cur_]?.free_prize)) return pos(q[cur_].free_prize);
+    const any = q.find(it => Number(it.price) === 0 && pos(it.free_prize));
+    if (any && Number(settings?.price) === 0) return pos(any.free_prize);
+  }
+  return pos(settings?.free_prize);
+}
+function applyNotice() {
+  const el = $('giDesc'); if (!el) return;
+  const n = (settings?.notice || '').trim();
+  if (n) { el.removeAttribute('data-i'); if (el.textContent !== n) el.textContent = n; }
+  else if (!el.hasAttribute('data-i')) { el.setAttribute('data-i', 'gi_desc'); el.textContent = DEFAULT_INFO; }
+  syncDescClamp();
+}
+async function setNotice(txt) {
+  if (cur?.role !== 'OWNER') return toast('ማስታወቂያ መቀየር የሚችለው ኦውነር ብቻ ነው', 'e');
+  const { error } = await sb.from('settings').update({ notice: txt }).eq('id', 1);
+  if (error) return toast(isSchemaErr(error) ? 'SQL ገና አልተሰራም — SETUP_SQL ያሂዱ (notice column)' : dbMsg(error), 'e');
+  settings.notice = txt; applyNotice();
+  toast(txt ? '✓ ማስታወቂያ ተቀምጧል' : '✓ ነባሩ መረጃ ተመልሷል');
+}
+function saveNotice() { setNotice(($('noticeTxt').value || '').trim().slice(0, 500)); }
+function resetNotice() { $('noticeTxt').value = ''; setNotice(''); }
 
 // ===================== DATA LOADERS =====================
 async function loadSettings() {
   const { data } = await sb.from('settings').select('*').eq('id', 1).single();
-  settings = data || { price: 50, interval_sec: 6, max_cards: 30, winner_pct: 70, app_on: true };
+  settings = data || { price: 50, interval_sec: 6, max_cards: 6, winner_pct: 70, app_on: true };
+  if (!(Number(settings.max_cards) >= 1) || Number(settings.max_cards) > MAX_CARDS_LIMIT) settings.max_cards = MAX_CARDS_LIMIT;
 }
 async function loadGame() {
   let { data } = await sb.from('games').select('*').order('id', { ascending: false }).limit(1);
@@ -4466,7 +4765,7 @@ async function syncGame(full = true) {
     if (prev && !same) { selected.clear(); await refreshMyCards(); }
     if (same && (game.drawn || []).length > prevLen) {
       const _b = (game.drawn || []).at(-1), _k = game.id + ':' + (game.drawn || []).length + ':' + _b;
-      if (window._lastAnnounced !== _k) { window._lastAnnounced = _k; sndBall(); speakBall(_b); }
+      if (window._lastAnnounced !== _k) { window._lastAnnounced = _k; if (prefs.voice && ('speechSynthesis' in window)) speakBall(_b); else sndBall(); }
     }
     if (same && prevSt !== game.status) {
       if (game.status === 'claiming') sndBingo();
@@ -4639,15 +4938,18 @@ function render() {
 
   const reg = gameCards.filter(c => c.registered);
   const pool = reg.reduce((a, c) => a + Number(c.price || gamePrice()), 0);
-  const prize = Math.floor(pool * Number(game?.winner_pct ?? settings?.winner_pct ?? 70) / 100);
+  const prize = gamePrice() === 0
+    ? freePrizeNow()
+    : Math.floor(pool * Number(game?.winner_pct ?? settings?.winner_pct ?? 70) / 100);
+  applyNotice();
   $('giCode').textContent = game?.code || '—';
   const _t = ['waiting','ready','preparing'].includes(game?.status) ? game?.start_at : game?.last_draw;
   $('giTime').textContent = _t ? new Date(_t).toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'}) : '—';
   $('giStatus').textContent = STAT_LBL[game?.status] || '—';
   $('giStatus').className = ['waiting','ready','preparing'].includes(game?.status) ? 'text-blue-400' : ['playing','claiming'].includes(game?.status) ? 'text-emerald-400' : 'text-slate-400';
   $('giType').textContent = GT[game?.type] || GT.line;
-  $('giPrice').textContent = '$' + fmt(gamePrice());
-  $('giPlayers').textContent = new Set(reg.filter(c => c.user_id != null).map(c => c.user_id)).size; // unique players (users), not cards
+  $('giPrice').textContent = gamePrice() === 0 ? tr('ነፃ (ቦነስ)') : '$' + fmt(gamePrice());
+  $('giPlayers').textContent = (settings?.game_queue || []).length || (game ? 1 : 0); // number of games
   $('giPrize').textContent = '$' + fmt(prize);
   if (isGA()) updAdminLive(reg, pool, prize);
   $('tBingo').innerHTML = chips(gameCards.filter(c => c.won), 'gr');
@@ -4675,7 +4977,7 @@ function render() {
   if (sf) { sf.textContent = settings?.app_on ? '🟢 ON' : '🔴 OFF'; sf.className = 'btn sm ' + (settings?.app_on ? 'b-ok' : 'b-bad'); }
 
   if (isGA() && !cfgDirty) {
-    $('cfgMax').value = settings?.max_cards || 30;
+    $('cfgMax').value = Math.min(MAX_CARDS_LIMIT, Number(settings?.max_cards) || MAX_CARDS_LIMIT);
     queue = JSON.parse(JSON.stringify(Array.isArray(settings?.game_queue) ? settings.game_queue : []));
     autoUI = !!settings?.auto_on;
     syncAutoBtn();
@@ -4737,9 +5039,13 @@ function renderCards() {
   }
   const live = ['playing','claiming'].includes(game?.status), lk = !canReg();
   const bg = ['#2f6fe0','#d24b4b','#2f9d4a','#7a4de0','#e07a2f'];
-  const list = [...myCards].sort((a, b) =>
-    prefs.order === 'asc' ? a.id - b.id :
-    prefs.order === 'reg' ? (Number(b.registered) - Number(a.registered)) || (b.id - a.id) : b.id - a.id);
+  // Always put registered cards on top; then respect prefs order among equals
+  const list = [...myCards].sort((a, b) => {
+    const regDiff = Number(b.registered) - Number(a.registered);
+    if (regDiff) return regDiff;
+    if (prefs.order === 'asc') return a.id - b.id;
+    return b.id - a.id;
+  });
 
   box.innerHTML = list.map(c => {
     const nx = !c.game_id;
@@ -4763,7 +5069,7 @@ function renderCards() {
       return `<button type="button" class="cell ${isMk?'mk':(isCalled?'called':'')}" ${canMark ? `onclick="toggleMark(${c.id},${n})"` : ''}>${n}</button>`;
     }).join('');
     return `<div class="pc ${c.won?'win':''} ${c.locked?'lock':''} ${selected.has(c.id)?'sel':''}">
-      <div class="ph" ${selMode ? `onclick="toggleSel(${c.id})"` : ''}><span class="flex items-center gap-2">${selMode ? (selected.has(c.id)?'☑':'☐') : 'ካርድ'} ${c.id} ${nx ? '<span class="chip !px-2 !py-0.5 !text-[11px]" style="background:#2563eb">ለቀጣይ</span>' : `<span class="chip am !px-2 !py-0.5 !text-[12px]">R-${remaining(c)}</span>`}</span>${(!selMode && (nx || canEdit())) ? `<button onclick="askDel(${c.id})" class="text-white/90 text-lg leading-none">✕</button>` : ''}</div>
+      <div class="ph" ${selMode ? `onclick="toggleSel(${c.id})"` : ''}><span class="flex items-center gap-2">${selMode ? (selected.has(c.id)?'☑':'☐') : 'ካርድ'} ${c.id} ${nx ? '<span class="chip !px-2 !py-0.5 !text-[11px]" style="background:#2563eb">ለቀጣይ</span>' : `<span class="chip am !px-2 !py-0.5 !text-[12px]">R-${remaining(c)}</span>`}</span>${(!selMode && (nx || canEdit())) ? `<button onclick="askDel(${c.id})" class="text-white/90 text-lg leading-none">✕</button>` : ''}${!selMode && ((c.game_id && game && c.game_id !== game.id) || (c.won && game && game.status === 'finished')) ? `<button onclick="reuseCard(${c.id})" class="text-amber-300 text-sm leading-none ml-1" title="እንደገና ተጫወት">↻</button>` : ''}</div>
       <div class="text-center py-1.5">${b}</div>
       <div class="pl">${'BINGO'.split('').map((l,i)=>`<div style="background:${bg[i]}">${l}</div>`).join('')}</div>
       <div class="pg">${cells}</div>
@@ -5544,6 +5850,12 @@ async function enter() {
         if (error && /PGRST202|Could not find|does not exist/i.test((error.code || '') + ' ' + (error.message || ''))) {
           autoOK = false;
           console.warn('auto_tick RPC missing — using client fallback');
+        } else if (error) {
+          console.warn('auto_tick error', error);
+          if ((isGA() || cur?.role === 'OWNER') && Date.now() - (window._tickErrAt || 0) > 60000) {
+            window._tickErrAt = Date.now();
+            toast('⚠️ ራስ-ሰር ጨዋታ ስህተት: ' + String(error.message || error.code || '').slice(0, 110), 'e');
+          }
         }
       }
       // 2) Client fallback: if game is playing and interval has passed, force a draw
@@ -5780,6 +6092,9 @@ window.addEventListener('load', async () => {
   window.signup = signup;
   window.installApp = installApp;
   window.editQ = editQ;
+  window.addFreeGame = addFreeGame;
+  window.syncFreeUi = syncFreeUi;
+  window.reuseCard = reuseCard;
   window.addQ10 = addQ10;
   window.clearQ = clearQ;
   window.stp = stp;
@@ -5874,6 +6189,30 @@ window.addEventListener('load', async () => {
     safeBind('btnAddAdmin', addAdmin);
   }, 600);
 });
+
+// ---- +251 phone inputs: pasted 0987215758 / +251987215758 / 251987215758 -> 987215758 ----
+(function () {
+  const ids = ['lPhone','sPhone','fPhone','trPhone','aPhone','oPhone'];
+  const clean = v => {
+    let d = String(v || '').replace(/\D/g, '');
+    if (d.startsWith('251') && d.length > 9) d = d.slice(3);
+    d = d.replace(/^0+/, '');
+    return d.slice(0, 9);
+  };
+  const hook = () => ids.forEach(id => {
+    const el = document.getElementById(id); if (!el || el.dataset.ph) return;
+    el.dataset.ph = '1';
+    el.addEventListener('input', () => { const c = clean(el.value); if (c !== el.value) el.value = c; });
+    el.addEventListener('paste', e => {
+      const t = (e.clipboardData || window.clipboardData)?.getData('text');
+      if (t == null) return;
+      e.preventDefault(); el.value = clean(t);
+      el.dispatchEvent(new Event('input', { bubbles: true }));
+    });
+  });
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', hook); else hook();
+  setInterval(hook, 1500);
+})();
 </script>
 </body>
 </html>
